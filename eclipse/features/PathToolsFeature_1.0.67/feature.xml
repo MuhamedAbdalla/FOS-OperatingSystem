@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="PathToolsFeature"
+      label="Path Tools Feature"
+      version="1.0.67"
+      provider-name="Sandip V. Chitale">
+
+   <description url="http://code.google.com/p/pathtools/">
+      Path Tools Eclipse Plug-in adds the following actions to Eclipse.
+* Copy Paths - this action copies the fully qualified path of
+selected folders and files into the Clipboard. Copy Paths action
+is now a drop down and allows you to copy paths in all different
+formats. The last used format is remembered and used.
+* Explore - this action opens the selected folder or the folder
+containing the selected file in the OS file explorer. The user
+can configure the exact command that is used to launch the file
+explorer.
+* Open Command Line Shell - this action opens a command line
+shell window at the selected folder or the folder containing
+the selected file
+* Open in external editor... - this action opens the selected
+folder or file using the selected external editor. The user can
+configure the exact command that is used to launch the external
+editor.
+* Custom actions pull down menu. These custom actions can be
+defined in Path Tools preferences page. Clicking on the Custom
+actions buttons shows the Path Tools preferences page.
+   </description>
+
+   <copyright>
+      Copyright 2011, Sandip V. Chitale
+   </copyright>
+
+   <license url="http://www.opensource.org/licenses/bsd-license.php">
+      BSD
+   </license>
+
+   <url>
+      <discovery label="PathTools Project home page" url="http://code.google.com/p/pathtools/"/>
+      <discovery label="Sandip Chitale&apos;s Blog" url="http://sandipchitale.blogspot.com/"/>
+   </url>
+
+   <includes
+         id="PathToolsRSEFeature"
+         version="1.0.64"
+         optional="true"/>
+
+   <includes
+         id="PathToolsSubclipseFeature"
+         version="1.0.67"
+         optional="true"/>
+
+   <plugin
+         id="PathTools"
+         download-size="0"
+         install-size="0"
+         version="1.0.67"
+         unpack="false"/>
+
+</feature>

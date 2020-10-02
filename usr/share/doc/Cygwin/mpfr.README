@@ -1,0 +1,117 @@
+The MPFR Library
+================
+
+The MPFR library is a C library for multiple-precision floating-point
+computations with exact rounding (also called correct rounding). It is
+based on the GMP multiple-precision library.
+
+The main goal of MPFR is to provide a library for multiple-precision 
+floating-point computation which is both efficient and has a well-defined 
+semantics. It copies the good ideas from the ANSI/IEEE-754 standard for 
+double-precision floating-point arithmetic (53-bit mantissa).
+
+Runtime requirements:
+  libgmp3
+
+Canonical homepage:
+  http://www.mpfr.org/
+
+Canonical download:
+  http://www.mpfr.org/
+
+--------------------
+
+Build requirements:
+  libgmp-devel
+
+Build instructions:
+  unpack mpfr-VER-REL-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport mpfr-VER-REL.cygport all
+
+This will create:
+  /usr/src/mpfr-VER-REL.tar.bz2
+  /usr/src/mpfr-VER-REL-src.tar.bz2
+  /usr/src/libmpfr1-VER-REL-src.tar.bz2
+  /usr/src/libmpfr-devel-VER-REL-src.tar.bz2
+
+--------------------
+
+Files included in the binary distro
+
+mpfr
+  /usr/share/doc/Cygwin/mpfr-VER.README
+
+libmpfr-doc
+  /usr/share/doc/mpfr-VER documentation tree
+  /usr/share/info/mpfr.info.gz
+
+libmpfr4
+  /usr/bin/cygmpfr-4.dll
+
+libmpfr-devel
+  /usr/include/mpf2mpfr.h
+  /usr/include/mpfr.h
+  /usr/lib/libmpfr.dll.a
+  /usr/lib/libmpfr.la
+
+--------------------
+
+Port Notes:
+
+Cygwin port maintained by: Achim Gratz
+
+---- version 3.1.3-1 ----
+Compiled with cygwin-2.0.4, gcc 4.9.2 and binutils 2.25
+TLS support enabled
+
+---- version 3.1.2-2 ----
+Compiled with cygwin-1.7.34, gcc 4.9.2 and binutils 2.25
+Patchlevel 11
+TLS support enabled
+
+---- version 3.1.2-1 ----
+Compiled with cygwin-1.17, gcc4 4.5.3-3 and binutils 2.23.51-1
+not threadsafe due to incomplete TLS support on Cygwin
+new style cygport file
+
+--------------------
+
+Released by: David Billinghurst
+
+---- version 3.0.1-1 ----
+Version 3.0.1 with upstream patches to 2011-05-09 (3.0.1-p4)
+Cygwin DLL version bumped from cygmpfr-1.dll to cygmpfr-4.dll
+Compiled with standard gcc 4.3.4 20090804 and binutils 2.20.51.20100410
+
+----- version 2.4.1-4 -----
+Rebuild using CVS binutils 2.19.51.20090529 and -shared-libgcc
+to generate DLL that can be rebased.
+
+----- version 2.4.1-3 -----
+Upstream patches (latest update: 2009-03-13).
+Compiles OOTB.  
+Built with gcc-4 (4.3.2)
+
+----- version 2.4.1-2 -----
+Compiles OOTB. First cygwin-1.7 release. 
+Built with gcc-3.
+
+----- version 2.4.1-1 -----
+Compiles OOTB. Last (?) cygwin-1.5 release
+
+----- version 2.3.2 -----
+Compiles OOTB.
+
+----- version 2.3.1 -----
+Compiles OOTB.
+
+----- version 2.2.1 -----
+Compiles OOTB.
+
+----- version 2.2.0 -----
+Initial release.  Was bundled with gmp prior to gmp-4.2.
+Compiles OOTB.
+Contains patches 1 to 16 for 2.2.0 release from the official website.

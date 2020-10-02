@@ -1,0 +1,81 @@
+bison 3.0.4-1
+------------------------------------------
+Bison is a general-purpose parser generator that converts an annotated
+context-free grammar into a deterministic LR or generalized LR (GLR)
+parser employing LALR(1) parser tables. As an experimental feature,
+Bison can also generate IELR(1) or canonical LR(1) parser tables. Once
+you are proficient with Bison, you can use it to develop a wide range
+of language parsers, from those used in simple desk calculators to
+complex programming languages.
+
+Runtime requirements (these or newer):
+  bash-4.1.17-9
+  cygwin-1.7.33-1
+  libgcc1-4.9.2-1 [only on 32-bit]
+  libintl8-0.19.3-1
+  m4-1.4.17-1
+
+Additional build conditions (these or newer):
+  binutils-2.25-1
+  cygport-0.17.1-1
+  flex-2.5.39-1
+  gcc-4.7.3-1
+  gcc-core-4.9.2-1
+  gcc-g++-4.9.2-1
+  libiconv-1.14-2
+  windows-default-manifest-6.4-1
+  xz-5.0.5-1
+
+Canonical homepage:
+  http://www.gnu.org/software/bison
+
+Canonical download:
+  ftp://ftp.gnu.org/pub/gnu/bison/
+
+License:
+  GPLv3+
+
+Language:
+  C
+
+------------------------------------
+
+Build instructions:
+  unpack bison-3.0.4-1-src.tar.xz
+    if you use setup to install this src package, it will be
+    unpacked under /usr/src automatically
+  cd /usr/src
+  cygport bison.cygport all
+
+This will create:
+  /usr/src/bison-3.0.4-1.tar.xz
+  /usr/src/bison-3.0.4-1-src.tar.xz
+  /usr/src/bison-debuginfo-3.0.4-1.tar.xz
+
+Or use 'cygport bison.cygport prep' to get a patched source directory
+
+To find out the files included in the binary distribution, you can use
+"cygcheck -l bison", or browse the listing for the appropriate
+version at <http://cygwin.com/packages/>.
+
+------------------
+
+Port Notes:
+
+----- version 3.0.4-1 -- 2015-01-23 -----
+New upstream release.
+
+----- version 3.0.2-1 -- 2014-10-02 -----
+New upstream release. New maintainer, Eric Blake.
+
+----- version 2.7.1-1 and earlier -----
+No per-build changelog was maintained; see the cygwin-announce archives
+for a history.
+
+-------------------------
+
+For more information about this package, see the upstream documentation in
+/usr/share/doc/bison/.
+
+Cygwin port maintained by: Eric Blake <eblake@redhat.com>
+Please address all questions to the Cygwin mailing list at <cygwin@cygwin.com>

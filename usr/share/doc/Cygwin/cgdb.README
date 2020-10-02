@@ -1,0 +1,97 @@
+cgdb
+------------------------------------------
+
+A curses-based interface to the GNU Debugger (GDB)
+
+The goal of program is to be lightweight and responsive; not
+encumbered with unnecessary features. The interface is designed to
+deliver the familiar GDB text interface, with a split screen showing
+the source as it executes. The UI is modeled on the classic Unix text
+editor, vi. Those familiar with vi should feel right at home using
+CGDB.
+
+Runtime requirements:
+  libncursesw10
+  libreadline7
+
+Build requirements:
+  libncurses-devel
+  readline
+  quilt
+  help2man
+
+Canonical homepage:
+  http://cgdb.github.com
+  https://github.com/cgdb
+  http://packages.debian.org/cgdb
+  http://sourceforge.net/projects/cgdb (old)
+
+Canonical download:
+  http://cgdb.me/files
+
+Version control repository:
+  git clone git://github.com/cgdb/cgdb.git
+
+Mailing list:
+  https://groups.google.com/group/cgdb-users
+  https://groups.google.com/group/cgdb-dev
+
+Forum / Wiki:
+
+IRC channel:
+  #cgdb on freenode
+
+Upstream contact:
+  Maintainer: Robert Rossi <bobbybrasko@users.sourceforge.net>
+              Bob Rossi <bob@brasko.net>
+  Bugs: https://sourceforge.net/mailarchive/forum.php?forum_name=cgdb-devel
+
+License:
+  GPL-2+
+
+Language:
+  C
+
+------------------------------------------
+
+Build instructions:
+  unpack cgdb-*-src.tar.bz2
+    if you use setup to install this source package, it will be
+    unpacked under /usr/src automatically
+  cd /usr/src
+  ./cgdb*.sh all
+
+------------------------------------------
+
+Files included in the binary distribution:
+  See Cygwin package archive
+
+------------------------------------------
+
+Port Notes:
+
+----- version 0.6.7+20150214+git3a710f9-1 -----
+- New upstream release 2015-02-16 Jari Aalto
+- Compile with libncursesw10
+- Git release removes obsolete Cygwin 1.7 specific
+  calls cygwin_conv_to_full_win32_path(). See
+  https://cygwin.com/cygwin-api/cygwin-functions.html#func-cygwin-conv-path
+- Disable Debian specific patches for this release,
+  which is taken from Git (patches don't apply)
+
+----- version 0.6.7-1 -----
+- New upstream release 2015-02-13 Jari Aalto
+- Add Debian patches
+- Add path patches/cygwin/10-cygwin-lib-calls.patch
+  to fix Cygwin compile issues. Namely
+  https://cygwin.com/cygwin-api/cygwin-functions.html#func-cygwin-conv-path
+- Compile with libncursesw10
+
+----- version 0.6.6-1 -----
+- Initial Cygwin release 2012-09-22 Jari Aalto
+
+----- version 0.6.4-1 -----
+- Private release 2008-03-12 Jari Aalto
+
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2008-2015 Jari Aalto; Licensed under GPL v2 or later

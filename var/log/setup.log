@@ -1,0 +1,423 @@
+2016/03/12 13:35:35 Starting cygwin install, version 2.873
+2016/03/12 13:35:35 User has backup/restore rights
+2016/03/12 13:35:35 io_stream_cygfile: fopen(/etc/setup/setup.rc) failed 2 No such file or directory
+2016/03/12 13:35:35 Current Directory: E:\toberemoved
+2016/03/12 13:35:35 Could not open service McShield for query, start and stop. McAfee may not be installed, or we don't have access.
+2016/03/12 13:35:38 source: network install
+2016/03/12 13:35:40 root: C:\cygwin system
+2016/03/12 13:35:42 Selected local directory: E:\toberemoved
+2016/03/12 13:35:46 net: Direct
+2016/03/12 13:35:54 site: ftp://mirrors.xmission.com/cygwin/
+2016/03/12 13:36:06 io_stream_cygfile: fopen(/etc/setup/installed.db) failed 2 No such file or directory
+2016/03/12 13:36:07 io_stream_cygfile: fopen(/etc/setup/timestamp) failed 2 No such file or directory
+2016/03/12 13:46:00 Adding required dependency binutils: Selecting version 2.25-4 for installation.
+2016/03/12 13:46:00 Adding required dependency bzip2: Selecting version 1.0.6-2 for installation.
+2016/03/12 13:46:00 Adding required dependency ca-certificates: Selecting version 2.6-1 for installation.
+2016/03/12 13:46:00 Adding required dependency crypt: Selecting version 1.2-1 for installation.
+2016/03/12 13:46:00 Adding required dependency cygwin-devel: Selecting version 2.4.1-1 for installation.
+2016/03/12 13:46:00 Adding required dependency groff: Selecting version 1.22.3-1 for installation.
+2016/03/12 13:46:00 Adding required dependency less: Selecting version 481-1 for installation.
+2016/03/12 13:46:00 Adding required dependency libargp: Selecting version 20110921-2 for installation.
+2016/03/12 13:46:00 Adding required dependency libatomic1: Selecting version 5.3.0-3 for installation.
+2016/03/12 13:46:00 Adding required dependency libattr1: Selecting version 2.4.46-1 for installation.
+2016/03/12 13:46:00 Adding required dependency libblkid1: Selecting version 2.25.2-2 for installation.
+2016/03/12 13:46:00 Adding required dependency libbz2_1: Selecting version 1.0.6-2 for installation.
+2016/03/12 13:46:00 Adding required dependency libcharset1: Selecting version 1.14-3 for installation.
+2016/03/12 13:46:00 Adding required dependency libcloog-isl4: Selecting version 0.18.0-2 for installation.
+2016/03/12 13:46:00 Adding required dependency libdb4.8: Selecting version 4.8.30-1 for installation.
+2016/03/12 13:46:00 Adding required dependency libffi6: Selecting version 3.2.1-1 for installation.
+2016/03/12 13:46:00 Adding required dependency libgcc1: Selecting version 5.3.0-3 for installation.
+2016/03/12 13:46:00 Adding required dependency libgdbm4: Selecting version 1.8.3-20 for installation.
+2016/03/12 13:46:00 Adding required dependency libgmp10: Selecting version 6.1.0-3p1 for installation.
+2016/03/12 13:46:00 Adding required dependency libgmpxx4: Selecting version 6.1.0-3p1 for installation.
+2016/03/12 13:46:00 Adding required dependency libgomp1: Selecting version 5.3.0-3 for installation.
+2016/03/12 13:46:00 Adding required dependency libguile17: Selecting version 1.8.8-1 for installation.
+2016/03/12 13:46:00 Adding required dependency libiconv: Selecting version 1.14-3 for installation.
+2016/03/12 13:46:00 Adding required dependency libiconv-devel: Selecting version 1.14-3 for installation.
+2016/03/12 13:46:00 Adding required dependency libiconv2: Selecting version 1.14-3 for installation.
+2016/03/12 13:46:00 Adding required dependency libisl10: Selecting version 0.11.1-2 for installation.
+2016/03/12 13:46:00 Adding required dependency libisl13: Selecting version 0.14.1-1 for installation.
+2016/03/12 13:46:00 Adding required dependency libltdl7: Selecting version 2.4.6-3 for installation.
+2016/03/12 13:46:00 Adding required dependency liblzma5: Selecting version 5.2.2-1 for installation.
+2016/03/12 13:46:00 Adding required dependency libmpc3: Selecting version 1.0.3-1 for installation.
+2016/03/12 13:46:00 Adding required dependency libmpfr4: Selecting version 3.1.4-1 for installation.
+2016/03/12 13:46:00 Adding required dependency libncursesw10: Selecting version 6.0-4.20160305 for installation.
+2016/03/12 13:46:00 Adding required dependency libp11-kit0: Selecting version 0.22.1-1 for installation.
+2016/03/12 13:46:00 Adding required dependency libpcre1: Selecting version 8.38-2 for installation.
+2016/03/12 13:46:00 Adding required dependency libpipeline1: Selecting version 1.4.0-1 for installation.
+2016/03/12 13:46:00 Adding required dependency libquadmath0: Selecting version 5.3.0-3 for installation.
+2016/03/12 13:46:00 Adding required dependency libsigsegv2: Selecting version 2.10-2 for installation.
+2016/03/12 13:46:00 Adding required dependency libsmartcols1: Selecting version 2.25.2-2 for installation.
+2016/03/12 13:46:00 Adding required dependency libssp0: Selecting version 5.3.0-3 for installation.
+2016/03/12 13:46:00 Adding required dependency libstdc++6: Selecting version 5.3.0-3 for installation.
+2016/03/12 13:46:00 Adding required dependency libtasn1_6: Selecting version 4.7-1 for installation.
+2016/03/12 13:46:00 Adding required dependency libuuid1: Selecting version 2.25.2-2 for installation.
+2016/03/12 13:46:00 Adding required dependency libvtv0: Selecting version 5.3.0-3 for installation.
+2016/03/12 13:46:00 Adding required dependency lynx: Selecting version 2.8.7-1 for installation.
+2016/03/12 13:46:00 Adding required dependency m4: Selecting version 1.4.17-2 for installation.
+2016/03/12 13:46:00 Adding required dependency p11-kit: Selecting version 0.22.1-1 for installation.
+2016/03/12 13:46:00 Adding required dependency p11-kit-trust: Selecting version 0.22.1-1 for installation.
+2016/03/12 13:46:00 Adding required dependency perl: Selecting version 5.22.1-2 for installation.
+2016/03/12 13:46:00 Adding required dependency perl-Pod-Simple: Selecting version 3.32-1 for installation.
+2016/03/12 13:46:00 Adding required dependency perl-Unicode-Normalize: Selecting version 1.25-1 for installation.
+2016/03/12 13:46:00 Adding required dependency perl_autorebase: Selecting version 5.22.1-2 for installation.
+2016/03/12 13:46:00 Adding required dependency perl_base: Selecting version 5.22.1-2 for installation.
+2016/03/12 13:46:00 Adding required dependency popt: Selecting version 1.16-1 for installation.
+2016/03/12 13:46:00 Adding required dependency w32api-headers: Selecting version 4.0.4-1 for installation.
+2016/03/12 13:46:00 Adding required dependency w32api-runtime: Selecting version 4.0.4-1 for installation.
+2016/03/12 13:46:00 Adding required dependency windows-default-manifest: Selecting version 6.4-1 for installation.
+2016/03/12 13:46:00 Adding required dependency xz: Selecting version 5.2.2-1 for installation.
+2016/03/12 13:46:00 Adding required dependency zlib-devel: Selecting version 1.2.8-3 for installation.
+2016/03/12 13:46:00 Adding required dependency zlib0: Selecting version 1.2.8-3 for installation.
+2016/03/12 13:46:02 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/_autorebase/_autorebase-001003-1.tar.xz
+2016/03/12 13:46:03 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/alternatives/alternatives-1.3.30c-10.tar.bz2
+2016/03/12 13:46:04 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/base-cygwin/base-cygwin-3.8-1.tar.xz
+2016/03/12 13:46:06 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/base-files/base-files-4.2-4.tar.xz
+2016/03/12 13:46:11 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/bash/bash-4.3.42-4.tar.xz
+2016/03/12 13:46:31 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/binutils/binutils-2.25-4.tar.xz
+2016/03/12 13:46:34 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/bison/bison-3.0.4-1.tar.xz
+2016/03/12 13:46:36 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/bzip2/bzip2-1.0.6-2.tar.bz2
+2016/03/12 13:46:38 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ca-certificates/ca-certificates-2.6-1.tar.xz
+2016/03/12 13:46:46 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/coreutils/coreutils-8.25-1.tar.xz
+2016/03/12 13:46:47 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/crypt/crypt-1.2-1.tar.bz2
+2016/03/12 13:46:48 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/cygutils/cygutils-1.4.15-2.tar.xz
+2016/03/12 13:46:57 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/cygwin/cygwin-2.4.1-1.tar.xz
+2016/03/12 13:47:01 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/cygwin/cygwin-devel/cygwin-devel-2.4.1-1.tar.xz
+2016/03/12 13:47:03 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/dash/dash-0.5.8-3.tar.xz
+2016/03/12 13:47:06 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/diffutils/diffutils-3.3-3.tar.xz
+2016/03/12 13:47:07 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/editrights/editrights-1.03-1.tar.xz
+2016/03/12 13:47:11 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/file/file-5.25-1.tar.xz
+2016/03/12 13:47:16 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/findutils/findutils-4.6.0-1.tar.xz
+2016/03/12 13:47:22 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/flex/flex-2.5.39-1.tar.xz
+2016/03/12 13:47:29 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gawk/gawk-4.1.3-1.tar.xz
+2016/03/12 13:48:15 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/gcc-core/gcc-core-5.3.0-3.tar.xz
+2016/03/12 13:48:45 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/gcc-g++/gcc-g++-5.3.0-3.tar.xz
+2016/03/12 13:48:46 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/getent/getent-2.18.90-4.tar.xz
+2016/03/12 13:48:47 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gmp/gmp-6.1.0-3p1.tar.xz
+2016/03/12 13:48:50 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/grep/grep-2.21-2.tar.xz
+2016/03/12 13:48:59 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/groff/groff-1.22.3-1.tar.xz
+2016/03/12 13:49:03 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gzip/gzip-1.6-1.tar.xz
+2016/03/12 13:49:04 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/hostname/hostname-3.13-1.tar.bz2
+2016/03/12 13:49:09 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/texinfo/info/info-6.1-2.tar.xz
+2016/03/12 13:49:10 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ipc-utils/ipc-utils-1.0-1.tar.bz2
+2016/03/12 13:49:11 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/less/less-481-1.tar.xz
+2016/03/12 13:49:13 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libargp/libargp-20110921-2.tar.bz2
+2016/03/12 13:49:13 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libatomic1/libatomic1-5.3.0-3.tar.xz
+2016/03/12 13:49:14 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/attr/libattr1/libattr1-2.4.46-1.tar.bz2
+2016/03/12 13:49:16 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/util-linux/libblkid1/libblkid1-2.25.2-2.tar.xz
+2016/03/12 13:49:17 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/bzip2/libbz2_1/libbz2_1-1.0.6-2.tar.bz2
+2016/03/12 13:49:18 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libiconv/libcharset1/libcharset1-1.14-3.tar.xz
+2016/03/12 13:49:19 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/cloog-isl/libcloog-isl4/libcloog-isl4-0.18.0-2.tar.bz2
+2016/03/12 13:49:24 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/db4.8/libdb4.8/libdb4.8-4.8.30-1.tar.bz2
+2016/03/12 13:49:26 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libffi/libffi6/libffi6-3.2.1-1.tar.xz
+2016/03/12 13:49:27 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libgcc1/libgcc1-5.3.0-3.tar.xz
+2016/03/12 13:49:28 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gdbm/libgdbm4/libgdbm4-1.8.3-20.tar.bz2
+2016/03/12 13:49:29 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gmp/libgmp-devel/libgmp-devel-6.1.0-3p1.tar.xz
+2016/03/12 13:49:32 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gmp/libgmp10/libgmp10-6.1.0-3p1.tar.xz
+2016/03/12 13:49:33 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gmp/libgmpxx4/libgmpxx4-6.1.0-3p1.tar.xz
+2016/03/12 13:49:34 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libgomp1/libgomp1-5.3.0-3.tar.xz
+2016/03/12 13:49:38 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/guile/libguile17/libguile17-1.8.8-1.tar.xz
+2016/03/12 13:49:40 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libiconv/libiconv-1.14-3.tar.xz
+2016/03/12 13:49:51 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libiconv/libiconv-devel/libiconv-devel-1.14-3.tar.xz
+2016/03/12 13:49:57 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libiconv/libiconv2/libiconv2-1.14-3.tar.xz
+2016/03/12 13:49:58 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gettext/libintl-devel/libintl-devel-0.19.5.1-2.tar.xz
+2016/03/12 13:49:59 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gettext/libintl8/libintl8-0.19.5.1-2.tar.xz
+2016/03/12 13:50:03 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/isl/libisl10/libisl10-0.11.1-2.tar.bz2
+2016/03/12 13:50:09 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/isl/libisl13/libisl13-0.14.1-1.tar.xz
+2016/03/12 13:50:10 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libtool/libltdl7/libltdl7-2.4.6-3.tar.xz
+2016/03/12 13:50:12 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/xz/liblzma5/liblzma5-5.2.2-1.tar.xz
+2016/03/12 13:50:12 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/mpclib/libmpc-devel/libmpc-devel-1.0.3-1.tar.xz
+2016/03/12 13:50:14 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/mpclib/libmpc3/libmpc3-1.0.3-1.tar.xz
+2016/03/12 13:50:15 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/mpfr/libmpfr-devel/libmpfr-devel-3.1.4-1.tar.xz
+2016/03/12 13:50:17 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/mpfr/libmpfr4/libmpfr4-3.1.4-1.tar.xz
+2016/03/12 13:50:20 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ncurses/libncursesw10/libncursesw10-6.0-4.20160305.tar.xz
+2016/03/12 13:50:27 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/openssl/libopenssl100/libopenssl100-1.0.2g-3.tar.xz
+2016/03/12 13:50:28 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/p11-kit/libp11-kit0/libp11-kit0-0.22.1-1.tar.xz
+2016/03/12 13:50:30 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/pcre/libpcre1/libpcre1-8.38-2.tar.xz
+2016/03/12 13:50:31 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libpipeline/libpipeline1/libpipeline1-1.4.0-1.tar.xz
+2016/03/12 13:50:32 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libquadmath0/libquadmath0-5.3.0-3.tar.xz
+2016/03/12 13:50:34 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/readline/libreadline7/libreadline7-6.3.8-1.tar.xz
+2016/03/12 13:50:35 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libsigsegv/libsigsegv2/libsigsegv2-2.10-2.tar.xz
+2016/03/12 13:50:36 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/util-linux/libsmartcols1/libsmartcols1-2.25.2-2.tar.xz
+2016/03/12 13:50:37 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libssp0/libssp0-5.3.0-3.tar.xz
+2016/03/12 13:50:40 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libstdc++6/libstdc++6-5.3.0-3.tar.xz
+2016/03/12 13:50:42 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libtasn1/libtasn1_6/libtasn1_6-4.7-1.tar.xz
+2016/03/12 13:50:43 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/util-linux/libuuid1/libuuid1-2.25.2-2.tar.xz
+2016/03/12 13:50:43 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libvtv0/libvtv0-5.3.0-3.tar.xz
+2016/03/12 13:50:47 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/login/login-1.11-1.tar.xz
+2016/03/12 13:50:54 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/lynx/lynx-2.8.7-1.tar.bz2
+2016/03/12 13:50:56 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/m4/m4-1.4.17-2.tar.xz
+2016/03/12 13:51:02 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/make/make-4.1-1.tar.xz
+2016/03/12 13:51:08 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/man-db/man-db-2.7.4-1.tar.xz
+2016/03/12 13:51:09 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/mintty/mintty-2.2.3-0.tar.xz
+2016/03/12 13:51:11 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/mpfr/mpfr-3.1.4-1.tar.xz
+2016/03/12 13:51:13 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ncurses/ncurses-6.0-4.20160305.tar.xz
+2016/03/12 13:51:17 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/openssl/openssl-1.0.2g-3.tar.xz
+2016/03/12 13:51:18 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/p11-kit/p11-kit-0.22.1-1.tar.xz
+2016/03/12 13:51:20 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/p11-kit/p11-kit-trust/p11-kit-trust-0.22.1-1.tar.xz
+2016/03/12 13:51:43 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/perl/perl-5.22.1-2.tar.xz
+2016/03/12 13:51:45 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/perl-Pod-Simple/perl-Pod-Simple-3.32-1.tar.xz
+2016/03/12 13:51:46 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/perl-Unicode-Normalize/perl-Unicode-Normalize-1.25-1.tar.xz
+2016/03/12 13:51:47 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/perl/perl_autorebase/perl_autorebase-5.22.1-2.tar.xz
+2016/03/12 13:51:54 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/perl/perl_base/perl_base-5.22.1-2.tar.xz
+2016/03/12 13:51:55 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/popt/popt-1.16-1.tar.xz
+2016/03/12 13:51:57 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/rebase/rebase-4.4.2-1.tar.xz
+2016/03/12 13:51:59 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/run/run-1.3.4-2.tar.xz
+2016/03/12 13:52:02 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/sed/sed-4.2.2-3.tar.bz2
+2016/03/12 13:52:10 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/tar/tar-1.28-1.tar.xz
+2016/03/12 13:52:11 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ncurses/terminfo/terminfo-6.0-4.20160305.tar.xz
+2016/03/12 13:52:23 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/texinfo/texinfo-6.1-2.tar.xz
+2016/03/12 13:52:28 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/tzcode/tzcode-2016a-1.tar.xz
+2016/03/12 13:52:40 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/util-linux/util-linux-2.25.2-2.tar.xz
+2016/03/12 13:52:47 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/vim/vim-minimal/vim-minimal-7.4.1506-1.tar.xz
+2016/03/12 13:53:05 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/w32api-headers/w32api-headers-4.0.4-1.tar.xz
+2016/03/12 13:53:10 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/w32api-runtime/w32api-runtime-4.0.4-1.tar.xz
+2016/03/12 13:53:11 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/which/which-2.20-2.tar.bz2
+2016/03/12 13:53:12 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/windows-default-manifest/windows-default-manifest-6.4-1.tar.xz
+2016/03/12 13:53:14 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/xz/xz-5.2.2-1.tar.xz
+2016/03/12 13:53:15 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/zlib/zlib-devel/zlib-devel-1.2.8-3.tar.xz
+2016/03/12 13:53:16 Downloaded E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/zlib/zlib0/zlib0-1.2.8-3.tar.xz
+2016/03/12 13:53:22 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/_autorebase/_autorebase-001003-1.tar.xz
+2016/03/12 13:53:22 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/alternatives/alternatives-1.3.30c-10.tar.bz2
+2016/03/12 13:53:23 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/base-cygwin/base-cygwin-3.8-1.tar.xz
+2016/03/12 13:53:23 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/base-files/base-files-4.2-4.tar.xz
+2016/03/12 13:53:23 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/bash/bash-4.3.42-4.tar.xz
+2016/03/12 13:53:25 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/binutils/binutils-2.25-4.tar.xz
+2016/03/12 13:53:31 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/bison/bison-3.0.4-1.tar.xz
+2016/03/12 13:53:33 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/bzip2/bzip2-1.0.6-2.tar.bz2
+2016/03/12 13:53:33 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ca-certificates/ca-certificates-2.6-1.tar.xz
+2016/03/12 13:53:34 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/coreutils/coreutils-8.25-1.tar.xz
+2016/03/12 13:53:44 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/crypt/crypt-1.2-1.tar.bz2
+2016/03/12 13:53:44 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/cygutils/cygutils-1.4.15-2.tar.xz
+2016/03/12 13:53:44 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/cygwin/cygwin-2.4.1-1.tar.xz
+2016/03/12 13:53:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/cygwin/cygwin-devel/cygwin-devel-2.4.1-1.tar.xz
+2016/03/12 13:53:49 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/dash/dash-0.5.8-3.tar.xz
+2016/03/12 13:53:50 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/diffutils/diffutils-3.3-3.tar.xz
+2016/03/12 13:53:50 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/editrights/editrights-1.03-1.tar.xz
+2016/03/12 13:53:50 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/file/file-5.25-1.tar.xz
+2016/03/12 13:53:50 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/findutils/findutils-4.6.0-1.tar.xz
+2016/03/12 13:53:55 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/flex/flex-2.5.39-1.tar.xz
+2016/03/12 13:53:56 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gawk/gawk-4.1.3-1.tar.xz
+2016/03/12 13:54:01 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/gcc-core/gcc-core-5.3.0-3.tar.xz
+2016/03/12 13:54:11 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/gcc-g++/gcc-g++-5.3.0-3.tar.xz
+2016/03/12 13:54:25 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/getent/getent-2.18.90-4.tar.xz
+2016/03/12 13:54:25 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/grep/grep-2.21-2.tar.xz
+2016/03/12 13:54:31 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/groff/groff-1.22.3-1.tar.xz
+2016/03/12 13:54:43 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gzip/gzip-1.6-1.tar.xz
+2016/03/12 13:54:44 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/hostname/hostname-3.13-1.tar.bz2
+2016/03/12 13:54:45 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/texinfo/info/info-6.1-2.tar.xz
+2016/03/12 13:54:46 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ipc-utils/ipc-utils-1.0-1.tar.bz2
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/less/less-481-1.tar.xz
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libargp/libargp-20110921-2.tar.bz2
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libatomic1/libatomic1-5.3.0-3.tar.xz
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/attr/libattr1/libattr1-2.4.46-1.tar.bz2
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/util-linux/libblkid1/libblkid1-2.25.2-2.tar.xz
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/bzip2/libbz2_1/libbz2_1-1.0.6-2.tar.bz2
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libiconv/libcharset1/libcharset1-1.14-3.tar.xz
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/cloog-isl/libcloog-isl4/libcloog-isl4-0.18.0-2.tar.bz2
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/db4.8/libdb4.8/libdb4.8-4.8.30-1.tar.bz2
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libffi/libffi6/libffi6-3.2.1-1.tar.xz
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libgcc1/libgcc1-5.3.0-3.tar.xz
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gdbm/libgdbm4/libgdbm4-1.8.3-20.tar.bz2
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gmp/libgmp-devel/libgmp-devel-6.1.0-3p1.tar.xz
+2016/03/12 13:54:47 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gmp/libgmp10/libgmp10-6.1.0-3p1.tar.xz
+2016/03/12 13:54:48 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gmp/libgmpxx4/libgmpxx4-6.1.0-3p1.tar.xz
+2016/03/12 13:54:48 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libgomp1/libgomp1-5.3.0-3.tar.xz
+2016/03/12 13:54:48 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/guile/libguile17/libguile17-1.8.8-1.tar.xz
+2016/03/12 13:54:50 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libiconv/libiconv-1.14-3.tar.xz
+2016/03/12 13:54:51 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libiconv/libiconv-devel/libiconv-devel-1.14-3.tar.xz
+2016/03/12 13:54:52 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libiconv/libiconv2/libiconv2-1.14-3.tar.xz
+2016/03/12 13:54:52 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gettext/libintl-devel/libintl-devel-0.19.5.1-2.tar.xz
+2016/03/12 13:54:52 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gettext/libintl8/libintl8-0.19.5.1-2.tar.xz
+2016/03/12 13:54:52 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/isl/libisl10/libisl10-0.11.1-2.tar.bz2
+2016/03/12 13:54:52 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/isl/libisl13/libisl13-0.14.1-1.tar.xz
+2016/03/12 13:54:52 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libtool/libltdl7/libltdl7-2.4.6-3.tar.xz
+2016/03/12 13:54:52 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/xz/liblzma5/liblzma5-5.2.2-1.tar.xz
+2016/03/12 13:54:52 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/mpclib/libmpc-devel/libmpc-devel-1.0.3-1.tar.xz
+2016/03/12 13:54:52 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/mpclib/libmpc3/libmpc3-1.0.3-1.tar.xz
+2016/03/12 13:54:52 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/mpfr/libmpfr-devel/libmpfr-devel-3.1.4-1.tar.xz
+2016/03/12 13:54:52 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/mpfr/libmpfr4/libmpfr4-3.1.4-1.tar.xz
+2016/03/12 13:54:52 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ncurses/libncursesw10/libncursesw10-6.0-4.20160305.tar.xz
+2016/03/12 13:54:53 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/openssl/libopenssl100/libopenssl100-1.0.2g-3.tar.xz
+2016/03/12 13:54:55 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/p11-kit/libp11-kit0/libp11-kit0-0.22.1-1.tar.xz
+2016/03/12 13:54:55 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/pcre/libpcre1/libpcre1-8.38-2.tar.xz
+2016/03/12 13:54:57 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libpipeline/libpipeline1/libpipeline1-1.4.0-1.tar.xz
+2016/03/12 13:54:57 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libquadmath0/libquadmath0-5.3.0-3.tar.xz
+2016/03/12 13:54:57 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/readline/libreadline7/libreadline7-6.3.8-1.tar.xz
+2016/03/12 13:54:57 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libsigsegv/libsigsegv2/libsigsegv2-2.10-2.tar.xz
+2016/03/12 13:54:57 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/util-linux/libsmartcols1/libsmartcols1-2.25.2-2.tar.xz
+2016/03/12 13:54:58 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libssp0/libssp0-5.3.0-3.tar.xz
+2016/03/12 13:54:58 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libstdc++6/libstdc++6-5.3.0-3.tar.xz
+2016/03/12 13:54:58 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libtasn1/libtasn1_6/libtasn1_6-4.7-1.tar.xz
+2016/03/12 13:54:58 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/util-linux/libuuid1/libuuid1-2.25.2-2.tar.xz
+2016/03/12 13:54:58 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gcc/libvtv0/libvtv0-5.3.0-3.tar.xz
+2016/03/12 13:54:58 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/login/login-1.11-1.tar.xz
+2016/03/12 13:54:59 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/lynx/lynx-2.8.7-1.tar.bz2
+2016/03/12 13:55:01 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/m4/m4-1.4.17-2.tar.xz
+2016/03/12 13:55:01 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/make/make-4.1-1.tar.xz
+2016/03/12 13:55:01 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/man-db/man-db-2.7.4-1.tar.xz
+2016/03/12 13:55:07 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/mintty/mintty-2.2.3-0.tar.xz
+2016/03/12 13:55:07 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/mpfr/mpfr-3.1.4-1.tar.xz
+2016/03/12 13:55:07 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ncurses/ncurses-6.0-4.20160305.tar.xz
+2016/03/12 13:55:07 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/openssl/openssl-1.0.2g-3.tar.xz
+2016/03/12 13:55:08 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/p11-kit/p11-kit-0.22.1-1.tar.xz
+2016/03/12 13:55:08 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/p11-kit/p11-kit-trust/p11-kit-trust-0.22.1-1.tar.xz
+2016/03/12 13:55:08 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/perl/perl-5.22.1-2.tar.xz
+2016/03/12 13:55:29 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/perl-Pod-Simple/perl-Pod-Simple-3.32-1.tar.xz
+2016/03/12 13:55:29 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/perl-Unicode-Normalize/perl-Unicode-Normalize-1.25-1.tar.xz
+2016/03/12 13:55:30 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/perl/perl_autorebase/perl_autorebase-5.22.1-2.tar.xz
+2016/03/12 13:55:30 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/perl/perl_base/perl_base-5.22.1-2.tar.xz
+2016/03/12 13:55:32 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/popt/popt-1.16-1.tar.xz
+2016/03/12 13:55:33 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/rebase/rebase-4.4.2-1.tar.xz
+2016/03/12 13:55:33 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/run/run-1.3.4-2.tar.xz
+2016/03/12 13:55:33 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/sed/sed-4.2.2-3.tar.bz2
+2016/03/12 13:55:33 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/tar/tar-1.28-1.tar.xz
+2016/03/12 13:55:34 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ncurses/terminfo/terminfo-6.0-4.20160305.tar.xz
+2016/03/12 13:55:37 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/texinfo/texinfo-6.1-2.tar.xz
+2016/03/12 13:55:41 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/tzcode/tzcode-2016a-1.tar.xz
+2016/03/12 13:55:57 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/util-linux/util-linux-2.25.2-2.tar.xz
+2016/03/12 13:56:00 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/vim/vim-minimal/vim-minimal-7.4.1506-1.tar.xz
+2016/03/12 13:56:01 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/w32api-headers/w32api-headers-4.0.4-1.tar.xz
+2016/03/12 13:56:24 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/w32api-runtime/w32api-runtime-4.0.4-1.tar.xz
+2016/03/12 13:56:32 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/which/which-2.20-2.tar.bz2
+2016/03/12 13:56:32 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/windows-default-manifest/windows-default-manifest-6.4-1.tar.xz
+2016/03/12 13:56:33 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/xz/xz-5.2.2-1.tar.xz
+2016/03/12 13:56:35 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/zlib/zlib-devel/zlib-devel-1.2.8-3.tar.xz
+2016/03/12 13:56:35 Extracting from file://E:\toberemoved/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/zlib/zlib0/zlib0-1.2.8-3.tar.xz
+2016/03/12 13:56:35 Changing gid back to original
+2016/03/12 13:56:35 running: C:\cygwin\bin\dash.exe "/etc/postinstall/0p_000_autorebase.dash"
+2016/03/12 13:56:50 running: C:\cygwin\bin\dash.exe "/etc/postinstall/0p_update-info-dir.dash"
+2016/03/12 13:56:52 running: C:\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/000-cygwin-post-install.sh"
+2016/03/12 13:56:52 running: C:\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/coreutils.sh"
+2016/03/12 13:56:52 running: C:\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/bash.sh"
+2016/03/12 13:56:52 running: C:\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/base-files-mketc.sh"
+2016/03/12 13:56:53 running: C:\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/base-files-profile.sh"
+2016/03/12 13:56:54 running: C:\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/ca-certificates.sh"
+2016/03/12 13:56:56 running: C:\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/lynx.sh"
+2016/03/12 13:56:56 running: C:\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/man-db.sh"
+2016/03/12 13:56:56 running: C:\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/mintty.sh"
+2016/03/12 13:56:56 Changing gid to Administrators
+2016/03/12 13:57:51 note: Installation Complete
+2016/03/12 13:57:51 Ending cygwin install
+2016/03/14 11:08:34 Starting cygwin install, version 2.873
+2016/03/14 11:08:34 User has backup/restore rights
+2016/03/14 11:08:34 io_stream_cygfile: fopen(/etc/setup/setup.rc) failed 2 No such file or directory
+2016/03/14 11:08:34 Current Directory: C:\fos_cygwin
+2016/03/14 11:08:34 Could not open service McShield for query, start and stop. McAfee may not be installed, or we don't have access.
+2016/03/14 11:08:40 source: network install
+2016/03/14 11:08:53 root: C:\fos_cygwin system
+2016/03/14 11:08:56 Selected local directory: C:\fos_cygwin
+2016/03/14 11:08:57 net: Direct
+2016/03/14 11:09:09 Selected local directory: C:\fos_cygwin_packages
+2016/03/14 11:09:18 net: Direct
+2016/03/14 11:09:31 site: ftp://mirrors.xmission.com/cygwin/
+2016/03/14 11:12:58 Adding required dependency cygwin-debuginfo: Selecting version 2.4.1-1 for installation.
+2016/03/14 11:12:58 Adding required dependency dejavu-fonts: Selecting version 2.35-2 for installation.
+2016/03/14 11:12:58 Adding required dependency font-bh-lucidatypewriter-dpi75: Selecting version 7.5-2 for installation.
+2016/03/14 11:12:58 Adding required dependency libexpat1: Selecting version 2.1.0-3 for installation.
+2016/03/14 11:12:58 Adding required dependency libfontconfig-common: Selecting version 2.11.94-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libfontconfig1: Selecting version 2.11.94-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libfreetype6: Selecting version 2.5.5-2 for installation.
+2016/03/14 11:12:58 Adding required dependency libICE6: Selecting version 1.0.9-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libjpeg8: Selecting version 1.4.2-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libpng16: Selecting version 1.6.20-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libSM6: Selecting version 1.2.2-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libsqlite3_0: Selecting version 3.11.1-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libuuid-devel: Selecting version 2.25.2-2 for installation.
+2016/03/14 11:12:58 Adding required dependency libX11_6: Selecting version 1.6.3-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libXau6: Selecting version 1.0.8-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libXaw7: Selecting version 1.0.13-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libxcb1: Selecting version 1.11.1-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libXdmcp6: Selecting version 1.1.2-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libXext6: Selecting version 1.3.3-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libXft2: Selecting version 2.3.2-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libXm4: Selecting version 2.3.4-3 for installation.
+2016/03/14 11:12:58 Adding required dependency libXmu6: Selecting version 1.1.2-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libXpm4: Selecting version 3.5.11-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libXrender1: Selecting version 0.9.9-1 for installation.
+2016/03/14 11:12:58 Adding required dependency libXt6: Selecting version 1.1.5-1 for installation.
+2016/03/14 11:12:58 Adding required dependency python: Selecting version 2.7.10-1 for installation.
+2016/03/14 11:12:58 Adding required dependency rgb: Selecting version 1.0.5-1 for installation.
+2016/03/14 11:12:58 Adding required dependency xbitmaps: Selecting version 1.1.1-1 for installation.
+2016/03/14 11:12:58 Adding required dependency xorg-x11-fonts-dpi75: Selecting version 7.5-2 for installation.
+2016/03/14 11:13:02 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/cgdb/cgdb-0.6.7+20150214+git3a710f9-1.tar.xz
+2016/03/14 11:13:15 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/cygwin/cygwin-debuginfo/cygwin-debuginfo-2.4.1-1.tar.xz
+2016/03/14 11:13:20 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ddd/ddd-3.3.12-3.tar.xz
+2016/03/14 11:13:34 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ddd/ddd-debuginfo/ddd-debuginfo-3.3.12-3.tar.xz
+2016/03/14 11:13:41 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/dejavu-fonts/dejavu-fonts-2.35-2.tar.xz
+2016/03/14 11:13:42 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/xorg-x11-fonts/font-bh-lucidatypewriter-dpi75/font-bh-lucidatypewriter-dpi75-7.5-2.tar.xz
+2016/03/14 11:13:50 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gdb/gdb-7.10.1-1.tar.xz
+2016/03/14 11:14:10 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gdb/gdb-debuginfo/gdb-debuginfo-7.10.1-1.tar.xz
+2016/03/14 11:14:11 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gdbm/gdbm-1.8.3-20.tar.bz2
+2016/03/14 11:14:13 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libICE/libICE6/libICE6-1.0.9-1.tar.xz
+2016/03/14 11:14:15 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libSM/libSM6/libSM6-1.2.2-1.tar.xz
+2016/03/14 11:14:18 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libX11/libX11_6/libX11_6-1.6.3-1.tar.xz
+2016/03/14 11:14:19 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXau/libXau6/libXau6-1.0.8-1.tar.bz2
+2016/03/14 11:14:21 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXaw/libXaw7/libXaw7-1.0.13-1.tar.xz
+2016/03/14 11:14:23 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXdmcp/libXdmcp6/libXdmcp6-1.1.2-1.tar.xz
+2016/03/14 11:14:24 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXext/libXext6/libXext6-1.3.3-1.tar.xz
+2016/03/14 11:14:26 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXft/libXft2/libXft2-2.3.2-1.tar.xz
+2016/03/14 11:14:29 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/motif/libXm4/libXm4-2.3.4-3.tar.xz
+2016/03/14 11:14:31 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXmu/libXmu6/libXmu6-1.1.2-1.tar.xz
+2016/03/14 11:14:32 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXpm/libXpm4/libXpm4-3.5.11-1.tar.xz
+2016/03/14 11:14:33 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXrender/libXrender1/libXrender1-0.9.9-1.tar.xz
+2016/03/14 11:14:35 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXt/libXt6/libXt6-1.1.5-1.tar.xz
+2016/03/14 11:14:36 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/expat/libexpat1/libexpat1-2.1.0-3.tar.bz2
+2016/03/14 11:14:38 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/fontconfig/libfontconfig-common/libfontconfig-common-2.11.94-1.tar.xz
+2016/03/14 11:14:40 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/fontconfig/libfontconfig1/libfontconfig1-2.11.94-1.tar.xz
+2016/03/14 11:14:42 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/freetype2/libfreetype6/libfreetype6-2.5.5-2.tar.xz
+2016/03/14 11:14:43 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libjpeg-turbo/libjpeg8/libjpeg8-1.4.2-1.tar.xz
+2016/03/14 11:14:45 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libpng/libpng16/libpng16-1.6.20-1.tar.xz
+2016/03/14 11:14:47 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/sqlite3/libsqlite3_0/libsqlite3_0-3.11.1-1.tar.xz
+2016/03/14 11:14:48 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/util-linux/libuuid-devel/libuuid-devel-2.25.2-2.tar.xz
+2016/03/14 11:14:49 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libxcb/libxcb1/libxcb1-1.11.1-1.tar.xz
+2016/03/14 11:15:06 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/python/python-2.7.10-1.tar.xz
+2016/03/14 11:15:07 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/rgb/rgb-1.0.5-1.tar.bz2
+2016/03/14 11:15:09 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/vim/vim-minimal/vim-minimal-7.4.1558-1.tar.xz
+2016/03/14 11:15:10 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/xbitmaps/xbitmaps-1.1.1-1.tar.bz2
+2016/03/14 11:15:44 Downloaded C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/xorg-x11-fonts/xorg-x11-fonts-dpi75/xorg-x11-fonts-dpi75-7.5-2.tar.xz
+2016/03/14 11:15:48 Running preremove script for  vim-minimal
+2016/03/14 11:15:48 Uninstalling vim-minimal
+2016/03/14 11:15:48 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/cgdb/cgdb-0.6.7+20150214+git3a710f9-1.tar.xz
+2016/03/14 11:15:48 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/cygwin/cygwin-debuginfo/cygwin-debuginfo-2.4.1-1.tar.xz
+2016/03/14 11:15:59 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ddd/ddd-3.3.12-3.tar.xz
+2016/03/14 11:16:00 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/ddd/ddd-debuginfo/ddd-debuginfo-3.3.12-3.tar.xz
+2016/03/14 11:16:07 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/dejavu-fonts/dejavu-fonts-2.35-2.tar.xz
+2016/03/14 11:16:08 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gdb/gdb-7.10.1-1.tar.xz
+2016/03/14 11:16:09 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gdb/gdb-debuginfo/gdb-debuginfo-7.10.1-1.tar.xz
+2016/03/14 11:16:20 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/gdbm/gdbm-1.8.3-20.tar.bz2
+2016/03/14 11:16:21 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libICE/libICE6/libICE6-1.0.9-1.tar.xz
+2016/03/14 11:16:21 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libSM/libSM6/libSM6-1.2.2-1.tar.xz
+2016/03/14 11:16:21 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libX11/libX11_6/libX11_6-1.6.3-1.tar.xz
+2016/03/14 11:16:23 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXau/libXau6/libXau6-1.0.8-1.tar.bz2
+2016/03/14 11:16:23 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXaw/libXaw7/libXaw7-1.0.13-1.tar.xz
+2016/03/14 11:16:24 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXdmcp/libXdmcp6/libXdmcp6-1.1.2-1.tar.xz
+2016/03/14 11:16:24 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXext/libXext6/libXext6-1.3.3-1.tar.xz
+2016/03/14 11:16:24 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXft/libXft2/libXft2-2.3.2-1.tar.xz
+2016/03/14 11:16:24 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/motif/libXm4/libXm4-2.3.4-3.tar.xz
+2016/03/14 11:16:25 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXmu/libXmu6/libXmu6-1.1.2-1.tar.xz
+2016/03/14 11:16:25 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXpm/libXpm4/libXpm4-3.5.11-1.tar.xz
+2016/03/14 11:16:25 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXrender/libXrender1/libXrender1-0.9.9-1.tar.xz
+2016/03/14 11:16:25 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libXt/libXt6/libXt6-1.1.5-1.tar.xz
+2016/03/14 11:16:25 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/expat/libexpat1/libexpat1-2.1.0-3.tar.bz2
+2016/03/14 11:16:25 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/fontconfig/libfontconfig-common/libfontconfig-common-2.11.94-1.tar.xz
+2016/03/14 11:16:26 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/fontconfig/libfontconfig1/libfontconfig1-2.11.94-1.tar.xz
+2016/03/14 11:16:26 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/freetype2/libfreetype6/libfreetype6-2.5.5-2.tar.xz
+2016/03/14 11:16:27 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libjpeg-turbo/libjpeg8/libjpeg8-1.4.2-1.tar.xz
+2016/03/14 11:16:27 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libpng/libpng16/libpng16-1.6.20-1.tar.xz
+2016/03/14 11:16:27 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/sqlite3/libsqlite3_0/libsqlite3_0-3.11.1-1.tar.xz
+2016/03/14 11:16:27 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/util-linux/libuuid-devel/libuuid-devel-2.25.2-2.tar.xz
+2016/03/14 11:16:28 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/libxcb/libxcb1/libxcb1-1.11.1-1.tar.xz
+2016/03/14 11:16:29 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/python/python-2.7.10-1.tar.xz
+2016/03/14 11:16:59 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/rgb/rgb-1.0.5-1.tar.bz2
+2016/03/14 11:16:59 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/vim/vim-minimal/vim-minimal-7.4.1558-1.tar.xz
+2016/03/14 11:17:00 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/xbitmaps/xbitmaps-1.1.1-1.tar.bz2
+2016/03/14 11:17:00 Extracting from file://C:\fos_cygwin_packages/ftp%3a%2f%2fmirrors.xmission.com%2fcygwin%2f/x86/release/xorg-x11-fonts/xorg-x11-fonts-dpi75/xorg-x11-fonts-dpi75-7.5-2.tar.xz
+2016/03/14 11:17:28 Changing gid back to original
+2016/03/14 11:17:28 running: C:\fos_cygwin\bin\dash.exe "/etc/postinstall/0p_000_autorebase.dash"
+2016/03/14 11:17:43 running: C:\fos_cygwin\bin\dash.exe "/etc/postinstall/0p_update-info-dir.dash"
+2016/03/14 11:17:49 running: C:\fos_cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/cgdb.sh"
+2016/03/14 11:17:49 running: C:\fos_cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/zp_fontconfig_cache_1.sh"
+2016/03/14 11:17:49 Changing gid to Administrators
+2016/03/14 11:17:58 note: Installation Complete
+2016/03/14 11:17:58 Ending cygwin install

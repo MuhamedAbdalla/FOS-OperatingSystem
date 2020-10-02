@@ -1,0 +1,34 @@
+#This is a generated file; do not edit.
+#Sun Mar 13 17:33:50 EET 2016
+org.eclipse.linuxtools.rpm.ui.editor.doc=org.eclipse.linuxtools.rpm.ui.editor.doc\n1.0.0.201602162146
+org.eclipse.linuxtools.cdt.libhover.glibc=org.eclipse.linuxtools.cdt.libhover.glibc\n1.2.0.201602162146
+org.eclipse.help.base=org.eclipse.help.base\n4.0.301.v20160212-1500
+org.eclipse.mylyn.help.ui=org.eclipse.mylyn.help.ui\n3.18.0.v20151009-2340
+org.eclipse.cdt.debug.application.doc=org.eclipse.cdt.debug.application.doc\n1.1.0.201602051005
+org.eclipse.epp.mpc.ui=org.eclipse.epp.mpc.ui\n1.4.2.v20160210-2005
+org.eclipse.linuxtools.changelog.doc=org.eclipse.linuxtools.changelog.doc\n2.7.1.201602162146
+org.eclipse.rse.doc.user=org.eclipse.rse.doc.user\n3.4.100.201403101646
+org.eclipse.linuxtools.valgrind.doc=org.eclipse.linuxtools.valgrind.doc\n1.0.0.201602162146
+org.eclipse.egit.doc=org.eclipse.egit.doc\n4.1.1.201511131810-r
+org.eclipse.linuxtools.cdt.libhover.library.docs=org.eclipse.linuxtools.cdt.libhover.library.docs\n1.0.2.201602162146
+org.eclipse.linuxtools.gcov.docs=org.eclipse.linuxtools.gcov.docs\n1.0.0.201602162146
+org.eclipse.oomph.setup.doc=org.eclipse.oomph.setup.doc\n1.3.0.v20160213-0953
+org.eclipse.cdt=org.eclipse.cdt\n8.8.1.201602051005
+org.eclipse.tracecompass.doc.dev=org.eclipse.tracecompass.doc.dev\n1.2.0.201602091005
+org.eclipse.ui.cheatsheets=org.eclipse.ui.cheatsheets\n3.4.200.v20131227-1524
+org.eclipse.cdt.launch.remote=org.eclipse.cdt.launch.remote\n2.4.0.201602051005
+org.eclipse.linuxtools.cdt.libhover.devhelp=org.eclipse.linuxtools.cdt.libhover.devhelp\n1.1.0.201602162146
+org.eclipse.linuxtools.gprof.docs=org.eclipse.linuxtools.gprof.docs\n1.0.0.201602162146
+org.eclipse.linuxtools.profiling.docs=org.eclipse.linuxtools.profiling.docs\n1.0.0.201602162146
+org.eclipse.ui.intro=org.eclipse.ui.intro\n3.4.300.v20141007-1449
+org.eclipse.help=org.eclipse.help\n3.6.0.v20130326-1254
+org.eclipse.mylyn.wikitext.help.ui=org.eclipse.mylyn.wikitext.help.ui\n2.7.0.v20151009-1723
+org.eclipse.cdt.doc.user=org.eclipse.cdt.doc.user\n5.4.0.201602051005
+org.eclipse.tracecompass.gdbtrace.doc.user=org.eclipse.tracecompass.gdbtrace.doc.user\n1.0.0.201602091005
+org.eclipse.epp.mpc.help.ui=org.eclipse.epp.mpc.help.ui\n1.4.2.v20160120-1701
+org.eclipse.tracecompass.doc.user=org.eclipse.tracecompass.doc.user\n1.2.0.201602091005
+org.eclipse.platform=org.eclipse.platform\n4.5.2.v20160212-1500
+org.eclipse.oomph.p2.doc=org.eclipse.oomph.p2.doc\n1.3.0.v20160213-0953
+org.eclipse.cdt.autotools.docs=org.eclipse.cdt.autotools.docs\n2.0.2.201602051005
+org.eclipse.platform.doc.user=org.eclipse.platform.doc.user\n4.5.1.v20150819-1130
+org.eclipse.ui.intro.universal=org.eclipse.ui.intro.universal\n3.2.800.v20150325-0952
