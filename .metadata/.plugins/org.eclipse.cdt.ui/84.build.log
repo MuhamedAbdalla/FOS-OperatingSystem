@@ -1,0 +1,8 @@
+07:32:40 **** Incremental Build of configuration Default for project 84 ****
+make -j4 all 
++ cc kern/command_prompt.c
++ ld -m elf_i386 obj/kern/kernel
++ mk obj/kern/bochs.img
+
+07:32:55 Build Finished (took 14s.832ms)
+

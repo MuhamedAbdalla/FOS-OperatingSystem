@@ -1,0 +1,8 @@
+00:31:10 **** Incremental Build of configuration Default for project FOS_Project_2016_TA_Solution ****
+make -j4 all 
++ cc kern/command_prompt.c
++ ld -m elf_i386 obj/kern/kernel
++ mk obj/kern/bochs.img
+
+00:31:24 Build Finished (took 13s.748ms)
+

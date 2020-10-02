@@ -1,0 +1,177 @@
+#include <inc/memlayout.h>
+#include <kern/kheap.h>
+#include <kern/memory_manager.h>
+
+#define NUM_OF_KHEAP_PAGES (KERNEL_HEAP_MAX-KERNEL_HEAP_START)/PAGE_SIZE
+unsigned char all_heap_pages[NUM_OF_KHEAP_PAGES];
+int nAllocations;
+uint32 kheap_allocations_addresses[NUM_OF_KHEAP_PAGES];
+uint32 kheap_allocations_sizes[NUM_OF_KHEAP_PAGES];
+static int numOfKmalloc = 0;
+static int numOfKfree = 0;
+unsigned int f_to_p[1024*1024];
+static int first = 1;
+
+void initialize_kheap()
+{
+	memset(f_to_p, 0, 1024*1024*sizeof(unsigned int));
+}
+
+void* kmalloc(unsigned int size)
+{
+	if(first)
+	{
+		initialize_kheap();
+		first = 0;
+	}
+	/*
+	struct Frame_Info *f = NULL;
+	allocate_frame(&f) ;
+	f->references = 1;
+
+	unsigned int va = to_physical_address(f) + KERNEL_BASE;
+	f_to_p[to_physical_address(f)/PAGE_SIZE] = va;
+	return (void*)va;
+	 */
+
+	cprintf("size to allocate = %d\n", size) ;
+	uint32 rounded_size = ROUNDUP(size, PAGE_SIZE);
+	uint32 required_pages = rounded_size / PAGE_SIZE;
+	unsigned long long selected_allocation_start_va = 0;
+	int allocation_available = 0;
+
+	{
+		unsigned long long start_va = KERNEL_HEAP_START;
+		unsigned long long allocation_start_va = 0;
+		uint32 pages_found = 0;
+
+		uint32 minFit = 0x7FFFFFFE;
+		unsigned long long min_allocation_start_va = 0;
+
+		//if (sys_isHeapPlacementStrategyFIRSTFIT())
+		{
+			for (; start_va < KERNEL_HEAP_MAX; start_va += PAGE_SIZE)
+			{
+				if (all_heap_pages[(start_va - KERNEL_HEAP_START) / PAGE_SIZE] == 0)
+				{
+					//check for appropriate size
+					++pages_found;
+					if (allocation_start_va == 0)
+					{
+						allocation_start_va = start_va;
+					}
+
+					if (pages_found == required_pages)
+					{
+						allocation_available = 1;
+						break;
+					}
+
+				} else
+				{
+					//page is not free
+					pages_found = 0;
+					allocation_start_va = 0;
+				}
+			}
+		}
+
+		//if (sys_isHeapPlacementStrategyFIRSTFIT())
+		{
+			selected_allocation_start_va = allocation_start_va;
+		}
+	}
+
+
+	if(allocation_available == 1)
+	{
+		unsigned long long current_virtual_address = ROUNDDOWN(selected_allocation_start_va, PAGE_SIZE);
+
+		numOfKmalloc++ ;
+
+		cprintf("############### num of kmalloc = %d,va = %x\n",numOfKmalloc, current_virtual_address);
+
+		//sys_allocateMem(selected_allocation_start_va, rounded_size);
+		for (; current_virtual_address < (selected_allocation_start_va + rounded_size);
+				current_virtual_address += PAGE_SIZE)
+		{
+			cprintf("allocating page at va = %x\n", current_virtual_address) ;
+
+			//if (pf_add_empty_env_page(e, current_virtual_address) == E_NO_PAGE_FILE_SPACE)
+				//panic("run out of disk pages!!");
+			struct Frame_Info *f = NULL;
+			allocate_frame(&f) ;
+
+			map_frame(ptr_page_directory, f, (void*)((uint32)current_virtual_address), PERM_WRITEABLE);
+			f_to_p[to_physical_address(f)/PAGE_SIZE] = current_virtual_address;
+		}
+
+		uint32 va2 = selected_allocation_start_va;
+		for( ; va2 < (selected_allocation_start_va + rounded_size) ; va2+=PAGE_SIZE)
+		{
+			all_heap_pages[(va2 - KERNEL_HEAP_START) / PAGE_SIZE] = 1;
+		}
+		//if(returnAddress != NULL) va_kernel_free_mem = ((uint32)returnAddress + size);
+		++nAllocations;
+		kheap_allocations_addresses[nAllocations-1] = selected_allocation_start_va;
+		kheap_allocations_sizes[nAllocations-1] = rounded_size;
+
+		return (void*)((uint32)selected_allocation_start_va);
+	}
+	else
+	{
+		return NULL;
+	}
+}
+
+void kfree(void* virtual_address)
+{
+	numOfKfree++ ;
+
+
+	//virtual_address = ROUNDDOWN(virtual_address, PAGE_SIZE);
+	int a = 0;
+	for(; a<nAllocations; ++a) {
+		if(kheap_allocations_addresses[a]== (uint32)virtual_address) {
+			break;
+		}
+	}
+	if(a < nAllocations)
+	{
+		uint32 size = kheap_allocations_sizes[a];
+		unsigned long long sva = (unsigned long long)((uint32)virtual_address);
+		unsigned long long eva = sva + size;
+		unsigned long long va ;
+
+		cprintf("*****************num of kfree = %d, freeing va = %x\n",numOfKfree, virtual_address);
+		for (va = sva; va < eva; va+=PAGE_SIZE)
+		{
+			cprintf("freeing page at va = %x\n", va) ;
+
+			unmap_frame(ptr_page_directory, (void*)((uint32)va));
+			all_heap_pages[((uint32)va - KERNEL_HEAP_START) / PAGE_SIZE] = 0;
+		}
+
+		kheap_allocations_addresses[a] = 0;
+		kheap_allocations_sizes[a] = 0;
+	}
+	else
+	{
+		cprintf("freeing unallocated var=====================\n");
+		///error
+	}
+
+}
+
+unsigned int kheap_virtual_address(unsigned int physical_address)
+{
+	return f_to_p[physical_address/PAGE_SIZE];
+}
+
+unsigned int kheap_physical_address(unsigned int virtual_address)
+{
+	unsigned int * table;
+	get_page_table(ptr_page_directory, (void*)virtual_address, &table);
+
+	return table[PTX(virtual_address)] & 0xFFFFF000;
+}

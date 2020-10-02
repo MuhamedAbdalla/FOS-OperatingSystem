@@ -1,0 +1,8 @@
+08:39:23 **** Incremental Build of configuration Default for project Project ****
+make -j4 all 
++ cc kern/trap.c
++ ld -m elf_i386 obj/kern/kernel
++ mk obj/kern/bochs.img
+
+08:39:58 Build Finished (took 34s.617ms)
+

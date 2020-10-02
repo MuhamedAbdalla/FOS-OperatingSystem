@@ -1,0 +1,6 @@
+15:56:59 **** Build of configuration Default for project FOS_Labs_Template ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+
+15:57:01 Build Finished (took 1s.987ms)
+

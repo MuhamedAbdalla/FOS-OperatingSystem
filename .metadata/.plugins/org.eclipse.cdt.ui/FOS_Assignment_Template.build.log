@@ -1,0 +1,6 @@
+15:56:53 **** Build of configuration Default for project FOS_Assignment_Template ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+
+15:56:55 Build Finished (took 2s.367ms)
+

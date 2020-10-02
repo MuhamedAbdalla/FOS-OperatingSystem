@@ -1,0 +1,224 @@
+// Air reservation problem
+// Master program
+//TODO MAKE SURE THAT MAX_SEMAPHORES macro equals at least 100
+#include <inc/lib.h>
+#include <user/air.h>
+int find(int* arr, int size, int val);
+
+void
+_main(void)
+{
+/// Shared Variables Region ************************************************
+	int numOfCustomers = 15;
+	int flight1Customers = 3;
+	int flight2Customers = 8;
+	int flight3Customers = 4;
+
+	int flight1NumOfTickets = 8;
+	int flight2NumOfTickets = 15;
+
+	struct Customer * custs;
+	sys_createSharedObject("customers", sizeof(struct Customer)*numOfCustomers, 1, (void**)&custs);
+
+
+	{
+		int f1 = 0;
+		for(;f1<flight1Customers; ++f1)
+		{
+			custs[f1].booked = 0;
+			custs[f1].flightType = 1;
+		}
+
+		int f2=f1;
+		for(;f2<f1+flight2Customers; ++f2)
+		{
+			custs[f2].booked = 0;
+			custs[f2].flightType = 2;
+		}
+
+		int f3=f2;
+		for(;f3<f2+flight3Customers; ++f3)
+		{
+			custs[f3].booked = 0;
+			custs[f3].flightType = 3;
+		}
+	}
+
+	int* custCounter;
+	sys_createSharedObject("custCounter", sizeof(int), 1, (void**)&custCounter);
+	*custCounter = 0;
+
+
+	int* flight1Counter;
+	sys_createSharedObject("flight1Counter", sizeof(int), 1, (void**)&flight1Counter);
+	*flight1Counter = flight1NumOfTickets;
+	int* flight2Counter;
+	sys_createSharedObject("flight2Counter", sizeof(int), 1, (void**)&flight2Counter);
+	*flight2Counter = flight2NumOfTickets;
+
+
+	int* flight1BookedCounter;
+	sys_createSharedObject("flightBooked1Counter", sizeof(int), 1, (void**)&flight1BookedCounter);
+	*flight1BookedCounter = 0;
+	int* flight2BookedCounter;
+	sys_createSharedObject("flightBooked2Counter", sizeof(int), 1, (void**)&flight2BookedCounter);
+	*flight2BookedCounter = 0;
+
+	int* flight1BookedArr;
+	sys_createSharedObject("flightBooked1Arr", sizeof(int)*flight1NumOfTickets, 1, (void**)&flight1BookedArr);
+	int* flight2BookedArr;
+	sys_createSharedObject("flightBooked2Arr", sizeof(int)*flight2NumOfTickets, 1, (void**)&flight2BookedArr);
+
+
+	int* cust_ready_queue;
+	sys_createSharedObject("cust_ready_queue", sizeof(int)*numOfCustomers, 1, (void**)&cust_ready_queue);
+
+	int* queue_in;
+	sys_createSharedObject("queue_in", sizeof(int), 1, (void**)&queue_in);
+	*queue_in = 0;
+	int* queue_out;
+	sys_createSharedObject("queue_out", sizeof(int), 1, (void**)&queue_out);
+	*queue_out = 0;
+
+	// *************************************************************************************************
+	/// Semaphores Region ******************************************************************************
+
+	sys_createSemaphore("flight1CS", 1);
+	sys_createSemaphore("flight2CS", 1);
+
+	sys_createSemaphore("custCounterCS", 1);
+	sys_createSemaphore("custQueueCS", 1);
+
+	sys_createSemaphore("clerk", 3);
+
+	sys_createSemaphore("cust_ready", 0);
+
+	sys_createSemaphore("custTerminated", 0);
+
+	int s=0;
+	for(s=0; s<numOfCustomers; ++s)
+	{
+		char prefix[30]="cust_finished";
+		char id[5]; char sname[50];
+		ltostr(s, id);
+		strcconcat(prefix, id, sname);
+		sys_createSemaphore(sname, 0);
+	}
+
+	// *************************************************************************************************
+	// start all customers
+	int envID = sys_getenvid();
+	volatile struct Env* myEnv;
+	myEnv = &(envs[envID]);
+
+	uint32 envId;
+	envId = sys_create_env("taircl", (myEnv->page_WS_size));
+	sys_run_env(envId);
+
+	envId = sys_create_env("taircl", (myEnv->page_WS_size));
+	sys_run_env(envId);
+
+	envId = sys_create_env("taircl", (myEnv->page_WS_size));
+	sys_run_env(envId);
+
+	int c;
+	for(c=0; c< numOfCustomers;++c)
+	{
+		envId = sys_create_env("taircu", (myEnv->page_WS_size));
+		sys_run_env(envId);
+	}
+
+
+	for(c=0; c< numOfCustomers;++c)
+	{
+		sys_waitSemaphore("custTerminated");
+	}
+
+
+	env_sleep(1500);
+
+	int b;
+	for(b=0; b< (*flight1BookedCounter);++b)
+	{
+		cprintf("cust %d booked flight 1, originally ordered %d\n", flight1BookedArr[b], custs[flight1BookedArr[b]].flightType);
+	}
+
+	for(b=0; b< (*flight2BookedCounter);++b)
+	{
+		cprintf("cust %d booked flight 2, originally ordered %d\n", flight2BookedArr[b], custs[flight2BookedArr[b]].flightType);
+	}
+
+
+	{
+		int f1 = 0;
+		for(;f1<flight1Customers; ++f1)
+		{
+			if(find(flight1BookedArr, flight1NumOfTickets, f1) != 1)
+			{
+				panic("Error, wrong booking for user %d\n", f1);
+			}
+		}
+
+		int f2=f1;
+		for(;f2<f1+flight2Customers; ++f2)
+		{
+			if(find(flight2BookedArr, flight2NumOfTickets, f2) != 1)
+			{
+				panic("Error, wrong booking for user %d\n", f2);
+			}
+		}
+
+		int f3=f2;
+		for(;f3<f2+flight3Customers; ++f3)
+		{
+			if(find(flight1BookedArr, flight1NumOfTickets, f3) != 1 || find(flight2BookedArr, flight2NumOfTickets, f3) != 1)
+			{
+				panic("Error, wrong booking for user %d\n", f3);
+			}
+		}
+
+		assert(sys_getSemaphoreValue("flight1CS") == 1);
+		assert(sys_getSemaphoreValue("flight2CS") ==  1);
+
+		assert(sys_getSemaphoreValue("custCounterCS") ==  1);
+		assert(sys_getSemaphoreValue("custQueueCS") ==  1);
+
+		assert(sys_getSemaphoreValue("clerk") ==  3);
+
+		assert(sys_getSemaphoreValue("cust_ready") ==  -3);
+
+		assert(sys_getSemaphoreValue("custTerminated") ==  0);
+
+		int s=0;
+		for(s=0; s<numOfCustomers; ++s)
+		{
+			char prefix[30]="cust_finished";
+			char id[5]; char cust_finishedSemaphoreName[50];
+			ltostr(s, id);
+			strcconcat(prefix, id, cust_finishedSemaphoreName);
+			assert(sys_getSemaphoreValue(cust_finishedSemaphoreName) ==  0);
+		}
+
+		cprintf("Congratulations, Test Successful\n");
+	}
+
+}
+
+
+int find(int* arr, int size, int val)
+{
+
+	int result = 0;
+
+	int i;
+	for(i=0; i<size;++i )
+	{
+		if(arr[i] == val)
+		{
+			result = 1;
+			break;
+		}
+	}
+
+	return result;
+}

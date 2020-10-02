@@ -1,0 +1,40 @@
+14:06:59 **** Incremental Build of configuration Default for project FOS_FINAL_EVAL_2020_Ver_C ****
+make -j4 all 
++ cc[USER] lib/uheap.c
++ ar obj/lib/libfos.a
++ ld -m elf_i386 obj/user/fos_alloc
++ ld -m elf_i386 obj/user/tst_best_fit_2
++ ld -m elf_i386 obj/user/fos_input
++ ld -m elf_i386 obj/user/fos_data_on_stack
++ ld -m elf_i386 obj/user/quicksort_heap
++ ld -m elf_i386 obj/user/tst_free_1
++ ld -m elf_i386 obj/user/heap_program
++ ld -m elf_i386 obj/user/fos_factorial
++ ld -m elf_i386 obj/user/quicksort5
++ ld -m elf_i386 obj/user/tst_quicksort_freeHeap
++ ld -m elf_i386 obj/user/fos_fibonacci
++ ld -m elf_i386 obj/user/quicksort4
++ ld -m elf_i386 obj/user/tst_malloc_1
++ ld -m elf_i386 obj/user/fos_static_data_section
++ ld -m elf_i386 obj/user/tst_first_fit_2
++ ld -m elf_i386 obj/user/game
++ ld -m elf_i386 obj/user/tst_best_fit_1
++ ld -m elf_i386 obj/user/fos_helloWorld
++ ld -m elf_i386 obj/user/mergesort_noleakage
++ ld -m elf_i386 obj/user/quicksort_freeheap
++ ld -m elf_i386 obj/user/tst_free_3
++ ld -m elf_i386 obj/user/tst_first_fit_1
++ ld -m elf_i386 obj/user/tst_free_2
++ ld -m elf_i386 obj/user/quicksort_noleakage
++ ld -m elf_i386 obj/user/fos_add
++ ld -m elf_i386 obj/user/tst_invalid_access
++ ld -m elf_i386 obj/user/tst_placement
++ ld -m elf_i386 obj/user/mergesort_leakage
++ ld -m elf_i386 obj/user/tst_malloc_3
++ ld -m elf_i386 obj/user/quicksort
++ ld -m elf_i386 obj/user/tst_malloc_2
++ ld -m elf_i386 obj/kern/kernel
++ mk obj/kern/bochs.img
+
+14:07:14 Build Finished (took 15s.74ms)
+

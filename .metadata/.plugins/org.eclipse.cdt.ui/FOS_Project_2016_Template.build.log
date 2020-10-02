@@ -1,0 +1,149 @@
+06:00:40 **** Build of configuration Default for project FOS_Project_2016_Template ****
+make -j4 all 
++ as kern/entry.S
++ cc kern/init.c
++ cc kern/console.c
++ cc kern/command_prompt.c
++ cc kern/helpers.c
++ cc kern/memory_manager.c
++ cc kern/user_environment.c
++ cc kern/kclock.c
++ cc kern/picirq.c
++ cc kern/printf.c
++ cc kern/trap.c
++ as kern/trapentry.S
++ cc kern/sched.c
++ cc kern/syscall.c
++ cc kern/kdebug.c
++ cc kern/file_manager.c
++ cc kern/semaphore_manager.c
++ cc kern/shared_memory_manager.c
++ cc kern/kheap.c
++ cc kern/test_kheap.c
++ cc lib/printfmt.c
++ cc lib/readline.c
++ cc lib/string.c
++ cc lib/disk.c
++ cc[USER] lib/console.c
++ cc[USER] lib/libmain.c
++ cc[USER] lib/exit.c
++ cc[USER] lib/panic.c
++ cc[USER] lib/printf.c
++ cc[USER] lib/printfmt.c
++ cc[USER] lib/readline.c
++ cc[USER] lib/string.c
++ cc[USER] lib/uheap.c
++ cc[USER] lib/syscall.c
++ cc[USER] lib/concurrency.c
++ cc[USER] user/fos_alloc.c
++ as[USER] lib/entry.S
++ cc[USER] user/tst_best_fit_2.c
++ cc[USER] user/tst_free_2.c
++ cc[USER] user/fos_input.c
++ cc[USER] user/tst_realloc_2.c
++ cc[USER] user/tst_page_replacement_clock.c
++ cc[USER] user/quicksort3.c
++ cc[USER] user/fos_data_on_stack.c
++ cc[USER] user/quicksort_heap.c
++ cc[USER] user/tst_free_1.c
++ cc[USER] user/heap_program.c
++ cc[USER] user/fos_factorial.c
++ cc[USER] user/tst_page_replacement_FIFO_2.c
++ cc[USER] user/quicksort5.c
++ cc[USER] user/tst_page_replacement_alloc.c
++ cc[USER] user/tst_invalid_access.c
++ cc[USER] user/tst_quicksort_freeHeap.c
++ cc[USER] user/tst_worstfit.c
++ cc[USER] user/fos_fibonacci.c
++ cc[USER] user/quicksort4.c
++ cc[USER] user/tst_malloc_1.c
++ cc[USER] user/fos_static_data_section.c
++ cc[USER] user/tst_page_replacement_stack.c
++ cc[USER] user/tst_first_fit_2.c
++ cc[USER] user/quicksort2.c
++ cc[USER] user/game.c
++ cc[USER] user/tst_best_fit_1.c
++ cc[USER] user/fos_helloWorld.c
++ cc[USER] user/tst_malloc_3.c
++ cc[USER] user/mergesort_noleakage.c
++ cc[USER] user/tst_freeRAM_1.c
++ cc[USER] user/quicksort_freeheap.c
++ cc[USER] user/tst_free_3.c
++ cc[USER] user/tst_first_fit_1.c
++ cc[USER] user/quicksort1.c
++ cc[USER] user/quicksort_noleakage.c
++ cc[USER] user/fos_add.c
++ cc[USER] user/tstmod1.c
++ cc[USER] user/tst_realloc_1.c
++ cc[USER] user/quicksort_interrupt.c
++ cc[USER] user/tst_page_replacement_FIFO_1.c
++ cc[USER] user/tst_page_replacement_mod_clock.c
++ cc[USER] user/tst_placement.c
++ cc[USER] user/mergesort_leakage.c
++ cc[USER] user/tst_freeRAM_2.c
++ cc[USER] user/quicksort.c
++ cc[USER] user/tst_malloc_2.c
++ cc[USER] user/tst_nextfit.c
++ cc[USER] user/tst_page_replacement_lru.c
++ cc[USER] user/quicksort_semaphore.c
++ as boot/boot.S
++ cc -Os boot/main.c
++ ar obj/lib/libfos.a
+i386-elf-ar: creating obj/lib/libfos.a
++ ld -m elf_i386 obj/user/fos_alloc
++ ld -m elf_i386 obj/user/tst_best_fit_2
++ ld -m elf_i386 obj/user/tst_free_2
++ ld -m elf_i386 obj/user/fos_input
++ ld -m elf_i386 obj/user/tst_realloc_2
++ ld -m elf_i386 obj/user/tst_page_replacement_clock
++ ld -m elf_i386 obj/user/quicksort3
++ ld -m elf_i386 obj/user/fos_data_on_stack
++ ld -m elf_i386 obj/user/quicksort_heap
++ ld -m elf_i386 obj/user/tst_free_1
++ ld -m elf_i386 obj/user/heap_program
++ ld -m elf_i386 obj/user/fos_factorial
++ ld -m elf_i386 obj/user/tst_page_replacement_FIFO_2
++ ld -m elf_i386 obj/user/quicksort5
++ ld -m elf_i386 obj/user/tst_page_replacement_alloc
++ ld -m elf_i386 obj/user/tst_invalid_access
++ ld -m elf_i386 obj/user/tst_quicksort_freeHeap
++ ld -m elf_i386 obj/user/tst_worstfit
++ ld -m elf_i386 obj/user/fos_fibonacci
++ ld -m elf_i386 obj/user/quicksort4
++ ld -m elf_i386 obj/user/tst_malloc_1
++ ld -m elf_i386 obj/user/fos_static_data_section
++ ld -m elf_i386 obj/user/tst_page_replacement_stack
++ ld -m elf_i386 obj/user/tst_first_fit_2
++ ld -m elf_i386 obj/user/quicksort2
++ ld -m elf_i386 obj/user/game
++ ld -m elf_i386 obj/user/tst_best_fit_1
++ ld -m elf_i386 obj/user/fos_helloWorld
++ ld -m elf_i386 obj/user/tst_malloc_3
++ ld -m elf_i386 obj/user/mergesort_noleakage
++ ld -m elf_i386 obj/user/tst_freeRAM_1
++ ld -m elf_i386 obj/user/quicksort_freeheap
++ ld -m elf_i386 obj/user/tst_free_3
++ ld -m elf_i386 obj/user/tst_first_fit_1
++ ld -m elf_i386 obj/user/quicksort1
++ ld -m elf_i386 obj/user/quicksort_noleakage
++ ld -m elf_i386 obj/user/fos_add
++ ld -m elf_i386 obj/user/tstmod1
++ ld -m elf_i386 obj/user/tst_realloc_1
++ ld -m elf_i386 obj/user/quicksort_interrupt
++ ld -m elf_i386 obj/user/tst_page_replacement_FIFO_1
++ ld -m elf_i386 obj/user/tst_page_replacement_mod_clock
++ ld -m elf_i386 obj/user/tst_placement
++ ld -m elf_i386 obj/user/mergesort_leakage
++ ld -m elf_i386 obj/user/tst_freeRAM_2
++ ld -m elf_i386 obj/user/quicksort
++ ld -m elf_i386 obj/user/tst_malloc_2
++ ld -m elf_i386 obj/user/tst_nextfit
++ ld -m elf_i386 obj/user/tst_page_replacement_lru
++ ld -m elf_i386 obj/user/quicksort_semaphore
++ ld -m elf_i386 boot/boot
++ ld -m elf_i386 obj/kern/kernel
+boot block is 402 bytes (max 510)
++ mk obj/kern/bochs.img
+
+06:01:57 Build Finished (took 1m:16s.299ms)
+

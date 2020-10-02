@@ -1,0 +1,11 @@
+06:47:02 **** Incremental Build of configuration Debug for project testt ****
+make all 
+Building file: ../src/testt.cpp
+Invoking: Cross G++ Compiler
+i386-elfg++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testt.d" -MT"src/testt.o" -o "src/testt.o" "../src/testt.cpp"
+/bin/sh: i386-elfg++: command not found
+src/subdir.mk:18: recipe for target 'src/testt.o' failed
+make: *** [src/testt.o] Error 127
+
+06:47:02 Build Finished (took 131ms)
+

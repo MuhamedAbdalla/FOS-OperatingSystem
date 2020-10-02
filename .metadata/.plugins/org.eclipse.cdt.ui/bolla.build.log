@@ -1,0 +1,15 @@
+19:56:16 **** Incremental Build of configuration Debug for project bolla ****
+make all 
+Building file: ../src/bolla.c
+Invoking: Cygwin C Compiler
+gcc -I"C:\cygwin\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/bolla.d" -MT"src/bolla.o" -o "src/bolla.o" "../src/bolla.c"
+Finished building: ../src/bolla.c
+ 
+Building target: bolla
+Invoking: Cygwin C Linker
+gcc -L"C:\cygwin\lib" -o "bolla"  ./src/bolla.o   
+Finished building target: bolla
+ 
+
+19:56:17 Build Finished (took 753ms)
+

@@ -1,0 +1,6 @@
+00:51:00 **** Clean-only build of configuration Default for project FOS_Project_2016_Template_BIO ****
+make -j4 clean 
+rm -rf obj
+
+00:51:19 Build Finished (took 19s.205ms)
+

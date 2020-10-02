@@ -1,0 +1,6 @@
+23:15:16 **** Clean-only build of configuration Default for project KernelFaultIssue ****
+make -j4 clean 
+rm -rf obj
+
+23:15:17 Build Finished (took 1s.27ms)
+

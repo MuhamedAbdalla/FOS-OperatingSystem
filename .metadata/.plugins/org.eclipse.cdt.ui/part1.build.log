@@ -1,0 +1,6 @@
+09:32:42 **** Clean-only build of configuration Default for project part1 ****
+make clean 
+rm -rf obj
+
+09:32:43 Build Finished (took 875ms)
+

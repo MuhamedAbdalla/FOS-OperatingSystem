@@ -1,0 +1,11 @@
+06:00:02 **** Incremental Build of configuration Default for project 4 ****
+make -j4 all 
++ cc[USER] user/tst_first_fit_2.c
++ cc[USER] user/tst_first_fit_1.c
++ ld -m elf_i386 obj/user/tst_first_fit_1
++ ld -m elf_i386 obj/user/tst_first_fit_2
++ ld -m elf_i386 obj/kern/kernel
++ mk obj/kern/bochs.img
+
+06:00:24 Build Finished (took 22s.43ms)
+

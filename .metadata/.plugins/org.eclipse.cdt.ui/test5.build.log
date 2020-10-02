@@ -1,0 +1,12 @@
+19:06:10 **** Build of configuration Debug for project test5 ****
+make all 
+Building file: ../src/test5.cpp
+Invoking: Cross G++ Compiler
+i386-elf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test5.d" -MT"src/test5.o" -o "src/test5.o" "../src/test5.cpp"
+../src/test5.cpp:9:20: fatal error: iostream: No such file or directory
+compilation terminated.
+src/subdir.mk:18: recipe for target 'src/test5.o' failed
+make: *** [src/test5.o] Error 1
+
+19:06:10 Build Finished (took 235ms)
+

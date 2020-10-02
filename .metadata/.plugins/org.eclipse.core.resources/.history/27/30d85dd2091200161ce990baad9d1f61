@@ -1,0 +1,173 @@
+#include <inc/memlayout.h>
+#include <kern/kheap.h>
+#include <kern/memory_manager.h>
+
+//2016: NOTE: All kernel heap allocations are multiples of PAGE_SIZE (4KB)
+#define NUM_OF_KHEAP_PAGES (KERNEL_HEAP_MAX-KERNEL_HEAP_START)/PAGE_SIZE
+//should be already initialized correctly during kernel booting
+unsigned int kheap_allocations_sizes[NUM_OF_KHEAP_PAGES];
+
+unsigned int f_to_p[1024*1024]; //frames to pages map
+unsigned int kheap_empty_va = KERNEL_HEAP_START;
+
+void* kmalloc(unsigned int size)
+{
+	//TODO: [PROJECT 2016 - Kernel Dynamic Allocation/Deallocation] kmalloc()
+	// Write your code here, remove the panic and write your code
+	//panic("kmalloc() is not implemented yet...!!");
+
+	//NOTE: Allocation is continuous increasing virtual address
+	//NOTE: All kernel heap allocations are multiples of PAGE_SIZE (4KB)
+	//refer to the project documentation for the detailed steps
+
+
+	//TODO: [PROJECT 2016 - BONUS1] Implement a Kernel allocation strategy
+	// Instead of the continuous allocation/deallocation, implement one of
+	// the strategies NEXT FIT, BEST FIT, .. etc
+
+
+	//change this "return" according to your answer
+	//cprintf("kmalloc with rounded up size = %x\n", ROUNDUP(size, PAGE_SIZE));
+	uint32 remaining_size = KERNEL_HEAP_MAX - kheap_empty_va;
+
+	if( size > remaining_size)
+	{
+		return NULL;
+		panic("No enough kernel virtual heap space");
+	}
+
+	unsigned int selected_allocation_start_va = kheap_empty_va;
+	unsigned int current_virtual_address = kheap_empty_va;
+
+	uint32 rounded_size = ROUNDUP(size, PAGE_SIZE);
+	for (; current_virtual_address < (kheap_empty_va + rounded_size);
+			current_virtual_address += PAGE_SIZE)
+	{
+		struct Frame_Info *f = NULL;
+		allocate_frame(&f) ;
+		map_frame(ptr_page_directory, f, (void*)(current_virtual_address), PERM_WRITEABLE);
+		f_to_p[to_physical_address(f)/PAGE_SIZE] = current_virtual_address;
+	}
+
+	unsigned int kheap_allocation_index = (selected_allocation_start_va-KERNEL_HEAP_START)/PAGE_SIZE;
+	kheap_allocations_sizes[kheap_allocation_index] = rounded_size;
+
+	//update the empty address
+	kheap_empty_va += rounded_size;
+
+	//TODOTA we should do some here about f_to_p array, we should update it accordingly after the free
+	return (void*)(selected_allocation_start_va);
+
+	//return 0;
+}
+
+void kfree(void* virtual_address)
+{
+	//TODO: [PROJECT 2016 - Kernel Dynamic Allocation/Deallocation] kfree()
+	// Write your code here, remove the panic and write your code
+	//panic("kfree() is not implemented yet...!!");
+
+	//get the size of the given allocation using its address
+	//refer to the project documentation for the detailed steps
+
+	//TODO: [PROJECT 2016 - BONUS1] Implement a Kernel allocation strategy
+	// Instead of the continuous allocation/deallocation, implement one of
+	// the strategies NEXT FIT, BEST FIT, .. etc
+
+	uint32 sva = (uint32)virtual_address;
+	if(sva < KERNEL_HEAP_START || sva >= KERNEL_HEAP_MAX)
+	{
+		panic("Invalid kernel heap virtual address\n");
+	}
+	else if (kheap_allocations_sizes[(sva - KERNEL_HEAP_START) / PAGE_SIZE] == -1)
+	{
+		return;
+		//panic("freeing an already freed kernel address \n");
+	}
+
+	sva = ROUNDDOWN(sva, PAGE_SIZE);
+
+	unsigned int kheap_allocation_index = (sva-KERNEL_HEAP_START)/PAGE_SIZE;
+	uint32 size = kheap_allocations_sizes[kheap_allocation_index];
+	//cprintf("kfree with size = %d\n", size);
+
+	unsigned int eva = sva + size;
+	unsigned int va ;
+
+	for (va = sva; va < eva; va+=PAGE_SIZE)
+	{
+		//Clear corresponding entry in f_to_p array
+		uint32 pa = kheap_physical_address(va);
+		f_to_p[pa/PAGE_SIZE] = 0;
+
+		unmap_frame(ptr_page_directory, (void*)(va));
+		kheap_allocations_sizes[(va - KERNEL_HEAP_START) / PAGE_SIZE] = -1;
+	}
+}
+
+unsigned int kheap_virtual_address(unsigned int physical_address)
+{
+	//TODO: [PROJECT 2016 - Kernel Dynamic Allocation/Deallocation] kheap_virtual_address()
+	// Write your code here, remove the panic and write your code
+	//panic("kheap_virtual_address() is not implemented yet...!!");
+
+	//return the virtual address corresponding to given physical_address
+	//refer to the project documentation for the detailed steps
+
+	//change this "return" according to your answer
+
+	/*FASTEST CODE*/// using direct mapping
+	return f_to_p[physical_address/PAGE_SIZE];
+
+	/*REASONABLE CODE*/// using get_page_table and increment by 4 MB
+//	uint32 frameNum =  physical_address>>12;
+//	uint32 va;
+//	for (va = KERNEL_HEAP_START; va < kheap_empty_va; va+=PTSIZE)
+//	{
+//		uint32 *ptr_table;
+//		get_page_table(ptr_page_directory, (void*)va, &ptr_table);
+//		if (ptr_table == NULL)
+//			panic("KERNEL Table NOT EXIST!!!");
+//		int i ;
+//		for (i = 0; i < 1024; ++i)
+//		{
+//			if ((ptr_table[i] >> 12) == frameNum)
+//				return va + i*PAGE_SIZE;
+//		}
+//	}
+//	return 0;
+
+	/*SLOWEST CODE*///using get_frame_info -> call get_page_table-> call this function again
+/*	uint32 frameNum =  physical_address>>12;
+	uint32 va;
+	for (va = KERNEL_HEAP_START; va < kheap_empty_va; va+=PAGE_SIZE)
+	{
+		uint32 *ptr_table;
+		struct Frame_Info*ptr = get_frame_info(ptr_page_directory, (void*)va, &ptr_table);
+		if (ptr_table == NULL)
+			panic("KERNEL Table NOT EXIST!!!");
+
+		if (to_physical_address(ptr) == physical_address)
+		return va ;
+
+	}
+	return 0;
+	*/
+}
+
+unsigned int kheap_physical_address(unsigned int virtual_address)
+{
+	//TODO: [PROJECT 2016 - Kernel Dynamic Allocation/Deallocation] kheap_physical_address()
+	// Write your code here, remove the panic and write your code
+	//panic("kheap_physical_address() is not implemented yet...!!");
+
+	//return the physical address corresponding to given virtual_address
+	//refer to the project documentation for the detailed steps
+
+	//change this "return" according to your answer
+	unsigned int * table;
+	get_page_table(ptr_page_directory, (void*)virtual_address, &table);
+
+	return table[PTX(virtual_address)] & 0xFFFFF000;
+	//return 0;
+}

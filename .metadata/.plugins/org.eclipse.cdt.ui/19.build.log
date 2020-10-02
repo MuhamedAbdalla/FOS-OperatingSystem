@@ -1,0 +1,8 @@
+06:57:11 **** Build of configuration Default for project 19 ****
+make -j4 all 
+GNUmakefile:118: user/Makefrag: No such file or directory
+make: *** No rule to make target 'user/Makefrag'.  Stop.
+make: *** Waiting for unfinished jobs....
+
+06:57:14 Build Finished (took 3s.149ms)
+

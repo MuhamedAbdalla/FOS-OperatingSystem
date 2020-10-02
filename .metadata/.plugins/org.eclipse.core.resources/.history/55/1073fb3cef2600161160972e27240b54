@@ -1,0 +1,419 @@
+#include <inc/memlayout.h>
+#include <kern/kheap.h>
+#include <kern/memory_manager.h>
+
+//2016: NOTE: All kernel heap allocations are multiples of PAGE_SIZE (4KB)
+
+int top = -1;
+uint32 start_by[Max_Block];
+int Npages[Max_Block];
+uint8 Used[Max_Block];
+int Next=0;
+int cont=0;
+
+void* kmalloc(unsigned int size) {
+
+	init();
+
+	int Npaes=size/PAGE_SIZE;
+
+    if(size%PAGE_SIZE!=0)Npaes++;
+
+    if(calculate_available_frames().freeNotBuffered<Npaes)
+    	return NULL;
+
+    //if con change del to 0
+    return kmalloc_aux(Npaes,con);
+
+}
+void kfree(void* virtual_address) {
+	//TODO: [PROJECT 2016 - Kernel Dynamic Allocation/Deallocation] kfree()
+	// Write your code here, remove the panic and write your code
+	//panic("kfree() is not implemented yet...!!");
+
+	//get the size of the given allocation using its address
+	//refer to the project documentation for the detailed steps
+
+	//TODO: [PROJECT 2016 - BONUS1] Implement a Kernel allocation strategy
+	// Instead of the continuous allocation/deallocation, implement one of
+	// the strategies NEXT FIT, BEST FIT, .. etc
+    int i=0;
+    for(i;i<=top;i++)
+    {
+
+    	if((void *)start_by[i]==virtual_address)
+    	{
+
+    		Umap_Range(start_by[i],Npages[i]);
+    		if(del)return;
+    		if(i==0)
+    		{
+
+    			if(Used[1]==0)
+    			{
+    				Used[0]=0;
+    				Npages[0]+=Npages[1];
+    				DeleteAt(1);
+
+    			}
+    			else
+    			{
+    				Used[0]=0;
+
+    			}
+
+
+
+
+    		}
+
+    		else if(i==top)
+    		{
+
+    			if(Used[i-1]==0)
+    			{
+
+    				Npages[i-1]+=Npages[i];
+    				DeleteAt(i);
+
+    			}
+    			else
+    			{
+
+    			Used[i]=0;
+
+    			}
+
+
+    		}
+    		else
+    		{
+
+    			if((Used[i-1]==0)&&(Used[i+1]==0))
+    			{
+    				Npages[i-1]+=Npages[i];
+    				Npages[i-1]+=Npages[i+1];
+    				DeleteAt(i);
+    				DeleteAt(i);
+    			}
+    			else if(Used[i-1]==0)
+    			{
+
+    				Npages[i-1]+=Npages[i];
+    				DeleteAt(i);
+
+    			}
+    			else if(Used[i+1]==0)
+    			{
+
+    			   	Used[i]=0;
+    			   	Npages[i]+=Npages[i+1];
+    			   	DeleteAt(i+1);
+
+    			}
+    			else
+    			{
+    				Used[i]=0;
+    			}
+
+    		}
+
+
+
+
+
+
+
+    	}
+
+    }
+
+}
+unsigned int kheap_virtual_address(unsigned int physical_address) {
+	    //TODO: [PROJECT 2016 - Kernel Dynamic Allocation/Deallocation] kheap_virtual_address()
+	   // Write your code here, remove the panic and write your code
+	  //panic("kheap_virtual_address() is not implemented yet...!!");
+	 //return the virtual address corresponding to given physical_address
+	//refer to the project documentation for the detailed steps
+   //change this "return" according to your answer
+
+	struct Frame_Info * pt=to_frame_info(physical_address);
+
+	return pt->va;
+
+}
+unsigned int kheap_physical_address(unsigned int virtual_address) {
+	  //TODO: [PROJECT 2016 - Kernel Dynamic Allocation/Deallocation] kheap_physical_address()
+	 // Write your code here, remove the panic and write your code
+	//panic("kheap_physical_address() is not implemented yet...!!");
+   //return the physical address corresponding to given virtual_address
+  //refer to the project documentation for the detailed steps
+ //change this "return" according to your answer
+
+	        uint32 * ptr=NULL;
+			get_page_table(ptr_page_directory,(void *)virtual_address,&ptr);
+			if(ptr==NULL)panic("   dddd");
+			int FN=ptr[PTX(virtual_address)];
+			if(FN!=0)
+			{
+			//FN=FN>>12;
+	        //return FN*PAGE_SIZE;
+			return (FN & 0xFFFFF000);
+
+			}
+	        return 0;
+}
+void init() {
+	if (top == -1) {
+		start_by[0] = KERNEL_HEAP_START;
+		Npages[0] = Max_Block;
+		Used[0] = 0;
+		top = 0;
+
+
+
+	}
+
+}
+void DeleteAt(int i) {
+	int j;
+	for (j = i; j < top; j++) {
+		start_by[j] = start_by[j + 1];
+		Npages[j] = Npages[j + 1];
+		Used[j] = Used[j + 1];
+
+	}
+	if(Next==top)Next--;
+
+	top--;
+
+}
+void Sheftl(int i) {
+	int j;
+	for (j = top + 1; j > i; j--) {
+
+		start_by[j] = start_by[j - 1];
+		Npages[j] = Npages[j - 1];
+		Used[j] = Used[j - 1];
+
+	}
+
+	top++;
+
+}
+void* kmalloc_aux(int Pages, int stratigy)
+{
+
+
+	if(stratigy==con)
+		return kmalloc_cont(Pages);
+	if(stratigy==Ffit)
+	return kmalloc_first(Pages);
+    if(stratigy==Bfit)
+    return kmalloc_best(Pages);
+    if(stratigy==wfit)
+    return Kmalloc_worst(Pages);
+    if(stratigy==Nfit)
+    {
+    	void * temp=kmalloc_next(Pages);
+    	if(temp==NULL)
+    	{
+    		Next=0;
+    		temp=kmalloc_next(Pages);
+    		if(temp==NULL)
+    		{
+    			Next=0;
+    			return NULL;
+    		}
+    		return temp;
+    	}
+    	return temp;
+    }
+    return 0;
+}
+void* kmalloc_best(int NPage)
+{
+    int min=99999;
+    int best=0;
+	int i=0;
+    for(i;i<=top;i++)
+		{
+			if(Used[i]==0)
+			{
+			   if(NPage<=Npages[i])
+			   {
+
+				 if((Npages[i]-NPage)<min)
+				 {
+
+					 min=Npages[i]-NPage;
+					 best=i;
+
+				 }
+
+			   }
+
+			}
+
+		}
+
+	if(min!=99999)
+		return allocate(best, NPage);
+
+	return NULL;
+}
+void* kmalloc_first(int NPage) {
+
+int i=0;
+
+for(i;i<=top;i++)
+{
+		if(Used[i]==0)
+		{
+		   if(NPage<=Npages[i])
+		   {
+
+			 return   allocate( i, NPage);
+
+		   }
+
+		}
+
+	}
+
+	return NULL;
+}
+void* kmalloc_next(int NPage)
+{
+	int i=Next;
+
+	for(i;i<=top;i++)
+	{
+			if(Used[i]==0)
+			{
+			   if(NPage<=Npages[i])
+			   {
+
+				 Next=i;
+				 return   allocate( i, NPage);
+
+			   }
+
+			}
+
+		}
+		return NULL;
+}
+void  *	Kmalloc_worst(int Npage)
+{
+
+	  init();
+
+	  int i=0;
+	  int worst=-1;
+	  int max=-1;
+
+	  	for(i;i<=top;i++)
+	  	{
+	  			if(Used[i]==0)
+	  			{
+	  			   if(Npage<=Npages[i])
+	  			   {
+
+
+	  				   if(max==-1)
+	  				   {
+	  					 max=Npages[i];
+	  				     worst=i;
+
+	  				   }
+
+	  				   else if(Npages[i]>max)
+	  				   {
+	  					 max=Npages[i];
+	  					 worst=i;
+	  				   }
+
+	  			   }
+
+	  			}
+
+
+	  		}
+
+	  	if(worst==-1)
+	  		return NULL;
+
+	  	else
+	  	{
+
+	  		allocate(worst, Npage);
+
+	        return (void *)start_by[worst];
+
+
+	  	}
+}
+void Map_Range(uint32 start, int NPages) {
+
+	int k=0;
+	for (k; k < NPages; k++) {
+
+		struct Frame_Info * ptr_frame_info = NULL;
+		int r = allocate_frame(&ptr_frame_info);
+
+
+		r = map_frame(ptr_page_directory, ptr_frame_info, (void*) (start + (k
+				* PAGE_SIZE)), PERM_WRITEABLE);
+
+
+	}
+
+}
+void* allocate(int i,int NPage)
+{
+
+
+	if(Npages[i]==NPage)
+	{
+	   Map_Range(start_by[i],NPage);
+	   Used[i]=1;
+	   return (void *)start_by[i];
+	}
+	else if(Npages[i]>NPage)
+	{
+		Map_Range(start_by[i],NPage);
+		Used[i]=1;
+		int temp=Npages[i];
+		Npages[i]=NPage;
+		Sheftl(i+1);
+		start_by[i+1]=start_by[i]+NPage*PAGE_SIZE;
+		Npages[i+1]=temp-Npages[i];
+		Used[i+1]=0;
+		return (void *)start_by[i];
+
+	}
+
+return NULL;
+
+}
+void  Umap_Range(uint32 start,int NPages)
+{
+	int k=0;
+	for (k; k < NPages; k++) {
+
+		unmap_frame(ptr_page_directory,(void *)(start+k*PAGE_SIZE));
+
+	}
+}
+void* kmalloc_cont(int NPage)
+{
+     if(NPage>Npages[top])
+    	 return NULL;
+
+     cont=top;
+     return allocate(top,NPage);
+
+}
+
+

@@ -1,0 +1,6 @@
+05:23:54 **** Clean-only build of configuration Default for project fos_proj_2016 ****
+make -j4 clean 
+rm -rf obj
+
+05:24:04 Build Finished (took 10s.441ms)
+

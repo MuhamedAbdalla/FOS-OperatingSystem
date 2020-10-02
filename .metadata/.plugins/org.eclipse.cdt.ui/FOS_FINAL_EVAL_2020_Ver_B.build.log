@@ -1,0 +1,6 @@
+20:50:27 **** Incremental Build of configuration Default for project FOS_FINAL_EVAL_2020_Ver_B ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+
+20:50:28 Build Finished (took 954ms)
+

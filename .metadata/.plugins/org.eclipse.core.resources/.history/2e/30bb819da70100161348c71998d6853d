@@ -1,0 +1,37 @@
+// Test the use of semaphores for critical section & dependency
+// Master program: create the semaphores, run slaves and wait them to finish
+#include <inc/lib.h>
+
+void
+_main(void)
+{
+	sys_createSemaphore("cs1", 1);
+
+	sys_createSemaphore("depend1", 0);
+
+	int envID = sys_getenvid();
+	volatile struct Env* myEnv;
+	myEnv = &(envs[envID]);
+
+	int id1, id2, id3;
+	id1 = sys_create_env("sem1Slave", (myEnv->page_WS_size));
+	id2 = sys_create_env("sem1Slave", (myEnv->page_WS_size));
+	id3 = sys_create_env("sem1Slave", (myEnv->page_WS_size));
+
+	sys_run_env(id1);
+	sys_run_env(id2);
+	sys_run_env(id3);
+
+	sys_waitSemaphore("depend1") ;
+	sys_waitSemaphore("depend1") ;
+	sys_waitSemaphore("depend1") ;
+
+	int sem1val = sys_getSemaphoreValue("cs1");
+	int sem2val = sys_getSemaphoreValue("depend1");
+	if (sem2val == 0 && sem1val == 1)
+		cprintf("Congratulations!! Test of Semaphores [1] completed successfully!!\n\n\n");
+	else
+		cprintf("Error: wrong semaphore value... please review your semaphore code again...");
+
+	return;
+}
